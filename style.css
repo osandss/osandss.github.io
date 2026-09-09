@@ -496,11 +496,296 @@ a {
 
 
 /* =========================================
-   SIP SOBER PLACEHOLDER
+   SIP SOBER — PROJECT
 ========================================= */
 
 #sip-sober {
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #e9edf1;
+}
+
+
+/* =========================================
+   SIP SOBER — PROJECT INTRO
+========================================= */
+
+.sip-intro-section {
+  padding: 120px 0 105px;
+  background: #f7f8fa;
+}
+
+.sip-project-label {
+  margin: 0 0 18px;
+
+  color: #1676b9;
+
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 700;
+
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.sip-project-title {
+  max-width: 780px;
+  margin: 0;
+
+  color: #202124;
+
+  font-size: clamp(38px, 4.5vw, 58px);
+  line-height: 1.05;
+  font-weight: 700;
+
+  letter-spacing: -0.045em;
+}
+
+.sip-project-copy {
+  max-width: 780px;
+  margin: 28px 0 0;
+
+  color: #697582;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   SIP SOBER — SHARED SECTIONS
+========================================= */
+
+.sip-section {
+  border-top: 1px solid #f0f0f0;
+}
+
+
+/* =========================================
+   SIP SOBER — SECTION 01 / PROTOTYPE
+========================================= */
+
+.sip-prototype-block {
+  max-width: 820px;
+  margin: 68px auto 0;
+}
+
+.sip-prototype-block .image-label {
+  text-align: center;
+}
+
+.sip-prototype-image {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.sip-prototype-image img {
+  width: 100%;
+  border: 1px solid #e8ebee;
+}
+
+.sip-image-caption {
+  max-width: 620px;
+  margin: 20px auto 0;
+
+  color: #7a8591;
+
+  font-size: 13px;
+  line-height: 1.6;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   SIP SOBER — SECTION 02 / FIRST APP
+========================================= */
+
+.sip-build-grid {
+  max-width: 900px;
+  margin: 68px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 48px;
+
+  align-items: start;
+}
+
+.sip-build-item {
+  min-width: 0;
+}
+
+.sip-build-item .image-label {
+  min-height: 24px;
+  text-align: center;
+}
+
+.sip-build-item img {
+  width: 100%;
+  max-width: 230px;
+  margin: 0 auto;
+
+  border: 1px solid #e8ebee;
+}
+
+
+/* =========================================
+   SIP SOBER — SECTION 03 / EVOLUTION
+========================================= */
+
+.sip-evolution-grid {
+  max-width: 960px;
+  margin: 72px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 46px;
+
+  align-items: start;
+}
+
+.sip-evolution-item {
+  min-width: 0;
+  text-align: center;
+}
+
+.sip-evolution-title {
+  min-height: 48px;
+  margin: 0 0 28px;
+
+  color: #202124;
+
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.sip-before-after {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sip-evolution-image {
+  width: 100%;
+}
+
+.sip-state-label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #8a949e;
+
+  font-size: 9px;
+  line-height: 1.2;
+  font-weight: 700;
+
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.sip-evolution-image img {
+  width: 100%;
+  max-width: 210px;
+
+  margin: 0 auto;
+
+  border: 1px solid #e8ebee;
+}
+
+.sip-evolution-arrow {
+  margin: 18px 0;
+
+  color: #1676b9;
+
+  font-size: 22px;
+  line-height: 1;
+}
+
+.sip-evolution-copy {
+  max-width: 245px;
+  margin: 24px auto 0;
+
+  color: #697582;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   SIP SOBER — SECTION 04 / VISUAL IDENTITY
+========================================= */
+
+.sip-visual-grid {
+  max-width: 900px;
+  margin: 68px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 48px;
+
+  align-items: start;
+}
+
+.sip-visual-item {
+  min-width: 0;
+}
+
+.sip-visual-item .image-label {
+  min-height: 24px;
+  text-align: center;
+}
+
+.sip-visual-item img {
+  width: 100%;
+  max-width: 230px;
+
+  margin: 0 auto;
+
+  border: 1px solid #e8ebee;
+}
+
+
+/* =========================================
+   SIP SOBER — SECTION 05 / CURRENT APP
+========================================= */
+
+.sip-final-grid {
+  max-width: 900px;
+  margin: 68px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 48px;
+
+  align-items: start;
+}
+
+.sip-final-item {
+  min-width: 0;
+}
+
+.sip-final-item .image-label {
+  min-height: 24px;
+  text-align: center;
+}
+
+.sip-final-item img {
+  width: 100%;
+  max-width: 230px;
+
+  margin: 0 auto;
+
+  border: 1px solid #e8ebee;
+}
+
+.sip-final-insights {
+  margin-top: 72px;
 }
 
 
@@ -575,6 +860,34 @@ a {
    .responsive-item img {
      height: 390px;
    }
+
+   /* SIP SOBER */
+
+  .sip-intro-section {
+    padding: 95px 0 85px;
+  }
+
+  .sip-build-grid,
+  .sip-visual-grid,
+  .sip-final-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .sip-build-item img,
+  .sip-visual-item img,
+  .sip-final-item img {
+    max-width: 200px;
+  }
+
+  .sip-evolution-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .sip-evolution-image img {
+    max-width: 185px;
+  }
 }
 
 
@@ -808,8 +1121,113 @@ a {
     margin: 0 auto;
   }
 
-  .final-insights {
+   .final-insights {
     margin-top: 60px;
+  }
+
+
+  /* =========================================
+     SIP SOBER
+  ========================================= */
+
+  .sip-intro-section {
+    padding: 72px 0 68px;
+  }
+
+  .sip-project-label {
+    font-size: 10px;
+  }
+
+  .sip-project-title {
+    font-size: 36px;
+  }
+
+  .sip-project-copy {
+    margin-top: 22px;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+
+  /* SIP SOBER — PROTOTYPE */
+
+  .sip-prototype-block {
+    margin-top: 44px;
+  }
+
+  .sip-prototype-image {
+    max-width: 100%;
+  }
+
+  .sip-image-caption {
+    margin-top: 16px;
+    font-size: 12px;
+  }
+
+
+  /* SIP SOBER — FIRST APP */
+
+  .sip-build-grid {
+    margin-top: 46px;
+    grid-template-columns: 1fr;
+    gap: 54px;
+  }
+
+  .sip-build-item img {
+    max-width: 260px;
+  }
+
+
+  /* SIP SOBER — EVOLUTION */
+
+  .sip-evolution-grid {
+    margin-top: 50px;
+    grid-template-columns: 1fr;
+    gap: 74px;
+  }
+
+  .sip-evolution-title {
+    min-height: 0;
+    margin-bottom: 26px;
+    font-size: 17px;
+  }
+
+  .sip-evolution-image img {
+    max-width: 245px;
+  }
+
+  .sip-evolution-copy {
+    max-width: 300px;
+  }
+
+
+  /* SIP SOBER — VISUAL IDENTITY */
+
+  .sip-visual-grid {
+    margin-top: 46px;
+    grid-template-columns: 1fr;
+    gap: 54px;
+  }
+
+  .sip-visual-item img {
+    max-width: 260px;
+  }
+
+
+  /* SIP SOBER — CURRENT APP */
+
+  .sip-final-grid {
+    margin-top: 46px;
+    grid-template-columns: 1fr;
+    gap: 54px;
+  }
+
+  .sip-final-item img {
+    max-width: 260px;
+  }
+
+  .sip-final-insights {
+    margin-top: 58px;
   }
 
 }
