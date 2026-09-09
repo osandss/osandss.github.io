@@ -271,11 +271,11 @@ a {
 }
 
 .mam-original-image {
-  max-width: 650px;
+  max-width: 520px;
 }
 
 .mam-first-redesign-image {
-  max-width: 610px;
+  max-width: 500px;
 }
 
 .mam-subsection {
@@ -330,11 +330,10 @@ a {
 ========================================= */
 
 .planning-grid {
-  margin-top: 64px;
-
+  max-width: 900px;
+  margin: 64px auto 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   gap: 42px;
   align-items: start;
 }
@@ -346,7 +345,7 @@ a {
 
 .planning-item img {
   width: 100%;
-  max-width: 490px;
+  max-width: 400px;
 }
 
 
@@ -355,17 +354,22 @@ a {
 ========================================= */
 
 .journey-grid {
-  margin-top: 68px;
-
+  max-width: 940px;
+  margin: 68px auto 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
   gap: 42px;
   align-items: start;
 }
 
+.journey-item {
+  text-align: center;
+}
+
 .journey-item img {
   width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
 }
 
 .journey-insights {
@@ -378,7 +382,8 @@ a {
 ========================================= */
 
 .build-grid {
-  margin-top: 68px;
+  max-width: 980px;
+  margin: 68px auto 0;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -389,6 +394,7 @@ a {
 
 .build-column {
   min-width: 0;
+  text-align: center;
 }
 
 .build-images {
@@ -400,6 +406,8 @@ a {
 
 .build-images img {
   width: 100%;
+  max-width: 290px;
+  margin: 0 auto;
 }
 
 
@@ -435,9 +443,14 @@ a {
   width: 100%;
 }
 
-.responsive-item img {
-  max-height: 620px;
-  width: auto;
+.responsive-item:first-child img {
+  max-width: 220px;
+  width: 100%;
+}
+
+.responsive-item:last-child img {
+  max-width: 420px;
+  width: 100%;
 }
 
 .final-insights {
@@ -500,6 +513,7 @@ a {
   .journey-item:last-child {
     grid-column: 1 / -1;
     max-width: 50%;
+    margin: 0 auto;
   }
 
   .build-grid {
@@ -509,6 +523,7 @@ a {
 
   .build-column {
     max-width: 760px;
+    margin: 0 auto;
   }
 
   .responsive-block {
@@ -541,7 +556,6 @@ a {
 
   .nav {
     min-height: auto;
-
     padding: 18px 0;
 
     flex-direction: column;
@@ -572,7 +586,6 @@ a {
 
   .nav-links a {
     flex: 0 0 auto;
-
     font-size: 12px;
   }
 
@@ -642,7 +655,7 @@ a {
 
   .mam-original-image,
   .mam-first-redesign-image {
-    max-width: none;
+    max-width: 100%;
   }
 
   .insight-grid {
@@ -673,7 +686,7 @@ a {
   }
 
   .planning-item img {
-    max-width: none;
+    max-width: 100%;
   }
 
 
@@ -690,10 +703,13 @@ a {
   .journey-item:last-child {
     grid-column: auto;
     max-width: none;
+    margin: 0;
   }
 
   .journey-item img {
     width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   .journey-insights {
@@ -711,8 +727,19 @@ a {
     gap: 58px;
   }
 
+  .build-column {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
   .build-images {
     gap: 18px;
+  }
+
+  .build-images img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
 
@@ -735,12 +762,22 @@ a {
     align-items: flex-start;
   }
 
-  .responsive-item img {
+  .responsive-item:first-child img {
     width: 100%;
-    max-height: none;
+    max-width: 240px;
+
+    margin: 0 auto;
+  }
+
+  .responsive-item:last-child img {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0 auto;
   }
 
   .final-insights {
     margin-top: 60px;
   }
+
 }
