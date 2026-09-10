@@ -556,8 +556,8 @@ a {
 ========================================= */
 
 .sip-prototype-block {
-  max-width: 620px;
-  margin: 60px auto 0;
+  max-width: 500px;
+  margin: 56px auto 0;
 }
 
 .sip-prototype-block .image-label {
@@ -565,7 +565,7 @@ a {
 }
 
 .sip-prototype-image {
-  max-width: 560px;
+  max-width: 430px;
   margin: 0 auto;
 }
 
@@ -575,8 +575,8 @@ a {
 }
 
 .sip-image-caption {
-  max-width: 620px;
-  margin: 20px auto 0;
+  max-width: 500px;
+  margin: 18px auto 0;
 
   color: #7a8591;
 
@@ -781,6 +781,85 @@ a {
 
 .sip-final-insights {
   margin-top: 72px;
+}
+
+/* =========================================
+   SCROLL REVEAL ANIMATIONS
+========================================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+
+  transition:
+    opacity .65s cubic-bezier(.22, 1, .36, 1),
+    transform .65s cubic-bezier(.22, 1, .36, 1);
+
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* SMALL STAGGER FOR GROUPED ITEMS */
+
+.reveal-delay-1 {
+  transition-delay: .08s;
+}
+
+.reveal-delay-2 {
+  transition-delay: .16s;
+}
+
+
+/* INTRO LOAD ANIMATION */
+
+.portfolio-intro .intro-label,
+.portfolio-intro h1,
+.portfolio-intro .intro-copy {
+  opacity: 0;
+  transform: translateY(18px);
+
+  animation: introReveal .7s cubic-bezier(.22, 1, .36, 1) forwards;
+}
+
+.portfolio-intro h1 {
+  animation-delay: .08s;
+}
+
+.portfolio-intro .intro-copy {
+  animation-delay: .16s;
+}
+
+@keyframes introReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .reveal,
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .portfolio-intro .intro-label,
+  .portfolio-intro h1,
+  .portfolio-intro .intro-copy {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
 }
 
 
