@@ -1028,6 +1028,94 @@
 
   </main>
 
+
+  <!-- =========================
+       SCROLL REVEAL
+  ========================== -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const revealElements = document.querySelectorAll(
+        `
+        .section-header,
+        .mam-feature-block,
+        .mam-subsection,
+        .planning-item,
+        .journey-item,
+        .insight-card,
+        .build-column,
+        .responsive-item,
+        .sip-project-label,
+        .sip-project-title,
+        .sip-project-copy,
+        .sip-prototype-block,
+        .sip-build-item,
+        .sip-evolution-item,
+        .sip-visual-item,
+        .sip-final-item
+        `
+      );
+
+      revealElements.forEach((element) => {
+        element.classList.add("reveal");
+      });
+
+
+      const staggerGroups = document.querySelectorAll(
+        `
+        .insight-grid,
+        .planning-grid,
+        .journey-grid,
+        .build-grid,
+        .responsive-grid,
+        .sip-build-grid,
+        .sip-evolution-grid,
+        .sip-visual-grid,
+        .sip-final-grid
+        `
+      );
+
+      staggerGroups.forEach((group) => {
+        const children = group.children;
+
+        if (children[1]) {
+          children[1].classList.add("reveal-delay-1");
+        }
+
+        if (children[2]) {
+          children[2].classList.add("reveal-delay-2");
+        }
+      });
+
+
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+
+          entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+
+          });
+
+        },
+        {
+          threshold: 0.12,
+          rootMargin: "0px 0px -40px 0px"
+        }
+      );
+
+
+      revealElements.forEach((element) => {
+        observer.observe(element);
+      });
+
+    });
+  </script>
+
 </body>
 
 </html>
