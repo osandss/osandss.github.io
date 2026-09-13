@@ -473,46 +473,93 @@ a {
   margin-top: 110px;
 }
 
-
 /* =========================================
    INSIGHT / TAKEAWAY CARDS
 ========================================= */
 
 .insight-grid {
-  max-width: 960px;
-  margin: 52px auto 0;
+  max-width: 1000px;
+  margin: 58px auto 0;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
-  gap: 14px;
+  gap: 0;
+
+  counter-reset: insight;
 }
 
 .insight-card {
-  min-height: 150px;
-  padding: 26px 24px;
+  position: relative;
 
-  background: #f3f8fc;
-  border: 1px solid #e8f1f7;
+  min-height: 180px;
+  padding: 28px 34px 30px;
+
+  background: #ffffff;
+
+  border-top: 2px solid #1676b9;
+  border-right: 1px solid #e4e8eb;
+
+  counter-increment: insight;
+
+  transition:
+    transform .25s ease,
+    background .25s ease;
+}
+
+.insight-card:last-child {
+  border-right: 0;
+}
+
+.insight-card::before {
+  content: "0" counter(insight);
+
+  display: block;
+
+  margin-bottom: 30px;
+
+  color: #b7c4cf;
+
+  font-size: 11px;
+  line-height: 1;
+  font-weight: 700;
+
+  letter-spacing: .08em;
 }
 
 .insight-card h3 {
-  margin: 0 0 8px;
+  max-width: 230px;
+
+  margin: 0 0 10px;
+
   color: #202124;
 
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.3;
   font-weight: 700;
+
+  letter-spacing: -.015em;
 }
 
 .insight-card p {
+  max-width: 245px;
+
   margin: 0;
+
   color: #697582;
 
   font-size: 13px;
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
+@media (hover: hover) {
+
+  .insight-card:hover {
+    transform: translateY(-4px);
+
+    background: #fafcfd;
+  }
+}
 
 /* =========================================
    SECTION 02 — PLANNING
@@ -1111,11 +1158,17 @@ a {
   }
 
   .insight-grid {
-    grid-template-columns: 1fr;
+     grid-template-columns: 1fr;
   }
 
   .insight-card {
     min-height: 0;
+    border-right: 0;
+    border-top: 1px solid #dce3e8;
+  }
+   
+  .insight-card:first-child {
+    border-top: 2px solid #1676b9;
   }
 
   .planning-grid {
@@ -1336,14 +1389,30 @@ a {
   }
 
   .insight-grid {
-    margin-top: 34px;
+    margin-top: 38px;
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 0;
   }
-
-  .insight-card {
-    padding: 22px 20px;
-  }
+   
+   .insight-card {
+     min-height: 0;
+     padding: 24px 4px 28px;
+     border-right: 0;
+     border-top: 1px solid #dce3e8;
+   }
+   
+   .insight-card:first-child {
+     border-top: 2px solid #1676b9;
+   }
+   
+   .insight-card::before {
+     margin-bottom: 18px;
+   }
+   
+   .insight-card h3,
+   .insight-card p {
+     max-width: none;
+   }
 
   .mam-subsection {
     margin-top: 74px;
