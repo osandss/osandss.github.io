@@ -50,15 +50,15 @@ a {
   z-index: 1000;
   width: 100%;
 
-  background: rgba(255,255,255,.95);
-  border-bottom: 1px solid #eeeeee;
+  background: rgba(255, 255, 255, .88);
+  border-bottom: 1px solid rgba(32, 33, 36, .08);
 
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
 }
 
 .nav {
-  min-height: 82px;
+  min-height: 76px;
 
   display: flex;
   align-items: center;
@@ -68,70 +68,229 @@ a {
 }
 
 .nav-name {
-  font-size: 18px;
+  color: #202124;
+
+  font-size: 15px;
   line-height: 1;
   font-weight: 700;
-  letter-spacing: -0.02em;
+
+  letter-spacing: -.02em;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 32px;
+
+  gap: 34px;
 }
 
 .nav-links a {
-  font-size: 14px;
-  font-weight: 500;
-  color: #66717d;
+  position: relative;
+
+  padding: 29px 0 27px;
+
+  color: #6c7782;
+
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 600;
 
   transition: color .2s ease;
+}
+
+.nav-links a::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+
+  width: 100%;
+  height: 1px;
+
+  background: #1676b9;
+
+  transform: scaleX(0);
+  transform-origin: right;
+
+  transition: transform .25s ease;
 }
 
 .nav-links a:hover {
   color: #202124;
 }
 
+.nav-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 
 /* =========================================
-   PORTFOLIO INTRO
+   PORTFOLIO INTRO — EDITORIAL HERO
 ========================================= */
 
 .portfolio-intro {
-  padding: 120px 0 130px;
+  position: relative;
+
+  padding: 135px 0 145px;
+
+  background:
+    linear-gradient(
+      to right,
+      transparent calc(50% - .5px),
+      #eef0f2 calc(50% - .5px),
+      #eef0f2 calc(50% + .5px),
+      transparent calc(50% + .5px)
+    );
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+
+  gap: 100px;
+  align-items: end;
+}
+
+
+/* LEFT SIDE */
+
+.hero-main {
+  min-width: 0;
 }
 
 .intro-label {
-  margin: 0 0 24px;
+  margin: 0 0 30px;
+
   color: #1676b9;
 
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.2;
   font-weight: 700;
 
-  letter-spacing: .08em;
+  letter-spacing: .14em;
   text-transform: uppercase;
 }
 
 .portfolio-intro h1 {
-  max-width: 850px;
   margin: 0;
+
   color: #202124;
 
-  font-size: clamp(48px, 6vw, 78px);
-  line-height: .98;
+  font-size: clamp(72px, 8.8vw, 126px);
+  line-height: .82;
   font-weight: 700;
-  letter-spacing: -0.055em;
+
+  letter-spacing: -.075em;
 }
 
 .intro-copy {
-  max-width: 760px;
-  margin: 40px 0 0;
+  max-width: 520px;
+  margin: 52px 0 0;
 
   color: #697582;
 
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+
+/* RIGHT SIDE */
+
+.hero-side {
+  padding-bottom: 3px;
+}
+
+.hero-side-label {
+  margin: 0 0 24px;
+
+  color: #8a949e;
+
+  font-size: 10px;
+  line-height: 1;
+  font-weight: 700;
+
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.hero-project-link {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 38px 1fr auto;
+
+  gap: 18px;
+  align-items: start;
+
+  padding: 25px 0;
+
+  border-top: 1px solid #dadfe3;
+
+  transition:
+    transform .25s ease,
+    border-color .25s ease;
+}
+
+.hero-project-link:last-child {
+  border-bottom: 1px solid #dadfe3;
+}
+
+.hero-project-number {
+  padding-top: 3px;
+
+  color: #9aa3ab;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: .08em;
+}
+
+.hero-project-info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.hero-project-info strong {
+  color: #202124;
+
+  font-size: 19px;
+  line-height: 1.2;
+  font-weight: 700;
+
+  letter-spacing: -.025em;
+}
+
+.hero-project-info span {
+  color: #7a8591;
+
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.hero-arrow {
+  color: #1676b9;
+
+  font-size: 19px;
+  line-height: 1;
+
+  transition: transform .25s ease;
+}
+
+@media (hover: hover) {
+
+  .hero-project-link:hover {
+    transform: translateX(6px);
+    border-color: #1676b9;
+  }
+
+  .hero-project-link:hover .hero-arrow {
+    transform: translate(3px, 3px);
+  }
 }
 
 
@@ -240,6 +399,43 @@ a {
   text-transform: uppercase;
 }
 
+
+/* =========================================
+   MYABROADMDS — PROJECT OPEN
+========================================= */
+
+.mam-section-01 {
+  position: relative;
+  padding-top: 135px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.mam-section-01::before {
+  content: "01";
+
+  position: absolute;
+
+  top: 72px;
+  right: max(32px, calc((100vw - 1120px) / 2));
+
+  color: #f1f4f6;
+
+  font-size: clamp(120px, 17vw, 230px);
+  line-height: .8;
+  font-weight: 700;
+
+  letter-spacing: -.08em;
+
+  pointer-events: none;
+}
+
+.mam-section-01 .section-header {
+  position: relative;
+  z-index: 1;
+
+  max-width: 720px;
+}
 
 /* =========================================
    MYABROADMDS — SHARED
@@ -874,8 +1070,27 @@ a {
   }
 
   .portfolio-intro {
-    padding: 96px 0 105px;
-  }
+     padding: 105px 0 110px;
+     background: #ffffff;
+   }
+   
+   .hero-grid {
+     grid-template-columns: 1fr;
+     gap: 72px;
+   }
+   
+   .portfolio-intro h1 {
+     font-size: clamp(72px, 13vw, 104px);
+   }
+   
+   .hero-side {
+     max-width: 620px;
+   }
+   
+   .mam-section-01::before {
+     font-size: 160px;
+     right: 24px;
+   }
 
   .case-section {
     padding: 90px 0;
@@ -1014,27 +1229,60 @@ a {
   }
 
 
-  /* INTRO */
+  /* HERO */
 
-  .portfolio-intro {
-    padding: 72px 0 82px;
-  }
+.portfolio-intro {
+  padding: 76px 0 82px;
+}
 
-  .intro-label {
-    margin-bottom: 18px;
-    font-size: 10px;
-  }
+.hero-grid {
+  grid-template-columns: 1fr;
+  gap: 58px;
+}
 
-  .portfolio-intro h1 {
-    font-size: 46px;
-    line-height: 1;
-  }
+.intro-label {
+  margin-bottom: 22px;
+  font-size: 9px;
+}
 
-  .intro-copy {
-    margin-top: 28px;
-    font-size: 16px;
-    line-height: 1.65;
-  }
+.portfolio-intro h1 {
+  font-size: clamp(58px, 18vw, 78px);
+  line-height: .86;
+}
+
+.intro-copy {
+  margin-top: 34px;
+
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.hero-project-link {
+  grid-template-columns: 30px 1fr auto;
+
+  gap: 12px;
+
+  padding: 21px 0;
+}
+
+.hero-project-info strong {
+  font-size: 17px;
+}
+
+.hero-project-info span {
+  font-size: 11px;
+}
+
+.mam-section-01 {
+  padding-top: 86px;
+}
+
+.mam-section-01::before {
+  top: 48px;
+  right: 18px;
+
+  font-size: 110px;
+}
 
 
   /* GENERAL */
