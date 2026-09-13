@@ -1015,7 +1015,8 @@ a {
 
 .portfolio-intro .intro-label,
 .portfolio-intro h1,
-.portfolio-intro .intro-copy {
+.portfolio-intro .intro-copy,
+.portfolio-intro .hero-side {
   opacity: 0;
   transform: translateY(18px);
 
@@ -1028,6 +1029,10 @@ a {
 
 .portfolio-intro .intro-copy {
   animation-delay: .16s;
+}
+
+.portfolio-intro .hero-side {
+  animation-delay: .24s;
 }
 
 @keyframes introReveal {
@@ -1051,7 +1056,8 @@ a {
 
   .portfolio-intro .intro-label,
   .portfolio-intro h1,
-  .portfolio-intro .intro-copy {
+  .portfolio-intro .intro-copy,
+  .portfolio-intro .hero-side {
     opacity: 1;
     transform: none;
     animation: none;
