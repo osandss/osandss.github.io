@@ -556,8 +556,8 @@ a {
 ========================================= */
 
 .sip-prototype-block {
-  max-width: 500px;
-  margin: 56px auto 0;
+  max-width: 380px;
+  margin: 52px auto 0;
 }
 
 .sip-prototype-block .image-label {
@@ -565,7 +565,7 @@ a {
 }
 
 .sip-prototype-image {
-  max-width: 430px;
+  max-width: 300px;
   margin: 0 auto;
 }
 
