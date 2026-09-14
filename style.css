@@ -428,18 +428,21 @@ a {
 
 .mam-original-feature {
   width: 100%;
-  max-width: none;
-  margin: 68px 0 0;
+  margin: 72px 0 0;
+
   display: grid;
-  grid-template-columns: 285px 1fr;
-  gap: 60px;
+  grid-template-columns: 300px 1fr;
+
+  gap: 90px;
   align-items: center;
 }
 
 .mam-original-meta {
   position: relative;
   z-index: 2;
-  padding: 24px 0;
+
+  padding: 26px 0 0;
+
   background: #ffffff;
   border-top: 1px solid #dfe4e8;
 }
@@ -447,25 +450,34 @@ a {
 .mam-stage-number {
   display: inline-block;
   margin-bottom: 22px;
+
   color: #1676b9;
+
   font-size: 10px;
   line-height: 1;
   font-weight: 700;
+
   letter-spacing: .14em;
   text-transform: uppercase;
 }
 
 .mam-original-meta .image-label {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
+
   color: #202124;
-  font-size: 12px;
+
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .mam-stage-copy {
+  max-width: 285px;
   margin: 0;
+
   color: #697582;
-  font-size: 13px;
-  line-height: 1.65;
+
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 .mam-original-visual {
@@ -473,12 +485,12 @@ a {
   min-width: 0;
 
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .mam-original-image {
   width: 100%;
-  max-width: 650px;
+  max-width: 580px;
   margin: 0;
 }
 
@@ -601,7 +613,31 @@ a {
 .mam-section-01 .insight-grid {
   width: 100%;
   max-width: none;
-  margin-top: 48px;
+  margin-top: 64px;
+  gap: 56px;
+}
+
+.mam-section-01 .insight-card {
+  min-height: 0;
+  padding: 24px 0 0;
+
+  background: transparent;
+  border-top: 1px solid #dce3e8;
+  border-right: 0;
+}
+
+.mam-section-01 .insight-card::before {
+  margin-bottom: 26px;
+  color: #1676b9;
+}
+
+.mam-section-01 .insight-card h3 {
+  max-width: 250px;
+  font-size: 17px;
+}
+
+.mam-section-01 .insight-card p {
+  max-width: 280px;
 }
 
 .insight-card {
@@ -660,6 +696,14 @@ a {
   .insight-card:hover {
     transform: translateY(-4px);
     background: #fafcfd;
+  }
+}
+
+@media (hover: hover) {
+
+  .mam-section-01 .insight-card:hover {
+    transform: none;
+    background: transparent;
   }
 }
 
@@ -1242,10 +1286,9 @@ a {
   /* MYABROADMDS — SECTION 01 */
 
 .mam-original-feature {
-  grid-template-columns: 180px 1fr;
-  gap: 42px;
+  grid-template-columns: 240px 1fr;
+  gap: 48px;
 }
-
 
 .mam-original-image {
   max-width: 100%;
