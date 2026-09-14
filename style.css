@@ -70,14 +70,12 @@ a {
   font-size: 15px;
   line-height: 1;
   font-weight: 700;
-
   letter-spacing: -.02em;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-
   gap: 34px;
 }
 
@@ -85,7 +83,6 @@ a {
   position: relative;
   padding: 29px 0 27px;
   color: #6c7782;
-
   font-size: 12px;
   line-height: 1;
   font-weight: 600;
@@ -124,7 +121,6 @@ a {
 
 .portfolio-intro {
   position: relative;
-
   padding: 135px 0 145px;
 
   background:
@@ -140,7 +136,6 @@ a {
 .hero-grid {
   display: grid;
   grid-template-columns: 1.2fr .8fr;
-
   gap: 100px;
   align-items: end;
 }
@@ -154,7 +149,6 @@ a {
 
 .intro-label {
   margin: 0 0 30px;
-
   color: #1676b9;
 
   font-size: 11px;
@@ -167,13 +161,11 @@ a {
 
 .portfolio-intro h1 {
   margin: 0;
-
   color: #202124;
 
   font-size: clamp(72px, 8.8vw, 126px);
   line-height: .82;
   font-weight: 700;
-
   letter-spacing: -.075em;
 }
 
@@ -196,7 +188,6 @@ a {
 
 .hero-side-label {
   margin: 0 0 24px;
-
   color: #8a949e;
 
   font-size: 10px;
@@ -217,7 +208,6 @@ a {
   align-items: start;
 
   padding: 25px 0;
-
   border-top: 1px solid #dadfe3;
 
   transition:
@@ -439,10 +429,10 @@ a {
 .mam-original-feature {
   width: 100%;
   max-width: none;
-  margin: 82px 0 0;
+  margin: 68px 0 0;
   display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 64px;
+  grid-template-columns: 285px 1fr;
+  gap: 60px;
   align-items: center;
 }
 
@@ -545,7 +535,7 @@ a {
 }
 
 .mam-redesign-copy .subsection-title {
-  font-size: clamp(30px, 3.4vw, 42px);
+  font-size: clamp(30px, 3.4vw, 34px);
 }
 
 .mam-redesign-copy .subsection-copy {
@@ -611,6 +601,7 @@ a {
 .mam-section-01 .insight-grid {
   width: 100%;
   max-width: none;
+  margin-top: 48px;
 }
 
 .insight-card {
