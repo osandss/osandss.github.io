@@ -437,11 +437,12 @@ a {
 /* ORIGINAL WEBSITE */
 
 .mam-original-feature {
-  max-width: 1040px;
-  margin: 82px auto 0;
+  width: 100%;
+  max-width: none;
+  margin: 82px 0 0;
   display: grid;
-  grid-template-columns: 250px 1fr;
-  gap: 56px;
+  grid-template-columns: 260px 1fr;
+  gap: 64px;
   align-items: center;
 }
 
@@ -480,11 +481,14 @@ a {
 .mam-original-visual {
   position: relative;
   min-width: 0;
+
+  display: flex;
+  justify-content: flex-end;
 }
 
 .mam-original-image {
   width: 100%;
-  max-width: 620px;
+  max-width: 650px;
   margin: 0;
 }
 
@@ -598,28 +602,27 @@ a {
 .insight-grid {
   max-width: 900px;
   margin: 58px auto 0;
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
   gap: 0;
-
   counter-reset: insight;
+}
+
+.mam-section-01 .insight-grid {
+  width: 100%;
+  max-width: none;
 }
 
 .insight-card {
   position: relative;
-
   min-height: 180px;
   padding: 28px 34px 30px;
 
   background: #ffffff;
-
   border-top: 2px solid #1676b9;
   border-right: 1px solid #e4e8eb;
 
   counter-increment: insight;
-
   transition:
     transform .25s ease,
     background .25s ease;
@@ -631,39 +634,30 @@ a {
 
 .insight-card::before {
   content: "0" counter(insight);
-
   display: block;
-
   margin-bottom: 30px;
-
   color: #b7c4cf;
 
   font-size: 11px;
   line-height: 1;
   font-weight: 700;
-
   letter-spacing: .08em;
 }
 
 .insight-card h3 {
   max-width: 230px;
-
   margin: 0 0 10px;
 
   color: #202124;
-
   font-size: 16px;
   line-height: 1.3;
   font-weight: 700;
-
   letter-spacing: -.015em;
 }
 
 .insight-card p {
   max-width: 245px;
-
   margin: 0;
-
   color: #697582;
 
   font-size: 13px;
@@ -674,7 +668,6 @@ a {
 
   .insight-card:hover {
     transform: translateY(-4px);
-
     background: #fafcfd;
   }
 }
