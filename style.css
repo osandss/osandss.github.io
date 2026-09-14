@@ -273,12 +273,46 @@ a {
 }
 
 .hero-arrow {
-  color: #1676b9;
+  position: relative;
 
-  font-size: 19px;
-  line-height: 1;
+  width: 15px;
+  height: 15px;
+
+  margin-top: 2px;
 
   transition: transform .25s ease;
+}
+
+.hero-arrow::before {
+  content: "";
+
+  position: absolute;
+
+  width: 9px;
+  height: 9px;
+
+  right: 1px;
+  bottom: 1px;
+
+  border-right: 1.5px solid #1676b9;
+  border-bottom: 1.5px solid #1676b9;
+}
+
+.hero-arrow::after {
+  content: "";
+
+  position: absolute;
+
+  width: 14px;
+  height: 1.5px;
+
+  right: 1px;
+  top: 6px;
+
+  background: #1676b9;
+
+  transform: rotate(45deg);
+  transform-origin: right center;
 }
 
 @media (hover: hover) {
@@ -467,6 +501,17 @@ a {
 
 .mam-first-redesign-image {
   max-width: 500px;
+}
+
+/* Center Section 01 image labels/captions */
+
+.mam-section-01 .mam-feature-block > .image-label {
+  text-align: center;
+}
+
+.mam-section-01 .image-caption {
+  align-items: center;
+  text-align: center;
 }
 
 .mam-subsection {
