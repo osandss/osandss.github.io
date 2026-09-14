@@ -273,46 +273,27 @@ a {
 }
 
 .hero-arrow {
-  position: relative;
+  width: 18px;
+  height: 18px;
 
-  width: 15px;
-  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  margin-top: 2px;
+  margin-top: 1px;
 
   transition: transform .25s ease;
 }
 
-.hero-arrow::before {
-  content: "";
+.hero-arrow svg {
+  width: 100%;
+  height: 100%;
 
-  position: absolute;
-
-  width: 9px;
-  height: 9px;
-
-  right: 1px;
-  bottom: 1px;
-
-  border-right: 1.5px solid #1676b9;
-  border-bottom: 1.5px solid #1676b9;
-}
-
-.hero-arrow::after {
-  content: "";
-
-  position: absolute;
-
-  width: 14px;
-  height: 1.5px;
-
-  right: 1px;
-  top: 6px;
-
-  background: #1676b9;
-
-  transform: rotate(45deg);
-  transform-origin: right center;
+  fill: none;
+  stroke: #1676b9;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 @media (hover: hover) {
