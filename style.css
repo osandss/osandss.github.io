@@ -374,32 +374,52 @@ a {
 
 
 /* =========================================
-   MYABROADMDS — PROJECT OPEN
+   CASE STUDY SECTION NUMBERS
 ========================================= */
 
-.mam-section-01 {
+.numbered-section {
   position: relative;
-  padding-top: 135px;
-  background: #ffffff;
   overflow: hidden;
 }
 
-.mam-section-01::before {
-  content: "01";
+.numbered-section::before {
+  content: attr(data-section);
+
   position: absolute;
   top: 72px;
   right: max(32px, calc((100vw - 1120px) / 2));
+
   color: #f5f7f8;
+
   font-size: clamp(105px, 14vw, 185px);
   line-height: .8;
   font-weight: 700;
   letter-spacing: -.08em;
+
   pointer-events: none;
 }
 
-.mam-section-01 .section-header {
+.numbered-section > .container {
   position: relative;
   z-index: 1;
+}
+
+.numbered-section .section-header {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* =========================================
+   MYABROADMDS — PROJECT OPEN
+========================================= */
+
+.mam-section-01 {
+  padding-top: 135px;
+  background: #ffffff;
+}
+
+.mam-section-01 .section-header {
   max-width: 720px;
 }
 
@@ -913,14 +933,14 @@ a {
 }
 
 .sip-project-title {
-  max-width: 780px;
+  max-width: 850px;
   margin: 0;
   color: #202124;
-  font-size: clamp(38px, 4vw, 34px);
-  line-height: 1.05;
-  font-weight: 700;
 
-  letter-spacing: -0.045em;
+  font-size: clamp(30px, 4vw, 34px);
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.035em;
 }
 
 .sip-project-copy {
@@ -1051,11 +1071,8 @@ a {
 
 .sip-state-label {
   display: block;
-
   margin-bottom: 10px;
-
   color: #8a949e;
-
   font-size: 9px;
   line-height: 1.2;
   font-weight: 700;
@@ -1281,7 +1298,7 @@ a {
      max-width: 620px;
    }
    
-   .mam-section-01::before {
+   .numbered-section::before {
      font-size: 135px;
      right: 24px;
    }
@@ -1497,7 +1514,7 @@ a {
   padding-top: 86px;
 }
 
-.mam-section-01::before {
+.numbered-section::before {
   top: 48px;
   right: 18px;
   font-size: 92px;
@@ -1742,9 +1759,6 @@ a {
     font-size: 10px;
   }
 
-  .sip-project-title {
-    font-size: 36px;
-  }
 
   .sip-project-copy {
     margin-top: 22px;
