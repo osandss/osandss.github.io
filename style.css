@@ -440,17 +440,16 @@ a {
 .mam-original-meta {
   position: relative;
   z-index: 2;
-
-  padding: 26px 0 0;
-
+  padding: 0;
   background: #ffffff;
-  border-top: 1px solid #dfe4e8;
 }
 
 .mam-stage-number {
-  display: inline-block;
-  margin-bottom: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 
+  margin-bottom: 20px;
   color: #1676b9;
 
   font-size: 10px;
@@ -461,13 +460,21 @@ a {
   text-transform: uppercase;
 }
 
+.mam-stage-number::before {
+  content: "";
+  width: 22px;
+  height: 2px;
+  background: #1676b9;
+}
+
 .mam-original-meta .image-label {
   margin-bottom: 16px;
-
   color: #202124;
-
-  font-size: 13px;
+  font-size: 15px;
+  line-height: 1.25;
   font-weight: 700;
+
+  letter-spacing: -.01em;
 }
 
 .mam-stage-copy {
