@@ -59,17 +59,14 @@ a {
 
 .nav {
   min-height: 76px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   gap: 32px;
 }
 
 .nav-name {
   color: #202124;
-
   font-size: 15px;
   line-height: 1;
   font-weight: 700;
@@ -86,9 +83,7 @@ a {
 
 .nav-links a {
   position: relative;
-
   padding: 29px 0 27px;
-
   color: #6c7782;
 
   font-size: 12px;
@@ -104,15 +99,12 @@ a {
   position: absolute;
   left: 0;
   bottom: 20px;
-
   width: 100%;
   height: 1px;
 
   background: #1676b9;
-
   transform: scaleX(0);
   transform-origin: right;
-
   transition: transform .25s ease;
 }
 
@@ -328,7 +320,7 @@ a {
   max-width: 850px;
   margin: 0;
   color: #202124;
-  font-size: clamp(30px, 4vw, 38px);
+  font-size: clamp(30px, 4vw, 34px);
   line-height: 1.08;
   font-weight: 700;
   letter-spacing: -0.035em;
@@ -345,7 +337,7 @@ a {
 .subsection-title {
   margin: 0;
   color: #202124;
-  font-size: clamp(22px, 3vw, 30px);
+  font-size: clamp(22px, 3vw, 32px);
   line-height: 1.12;
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -445,11 +437,11 @@ a {
 /* ORIGINAL WEBSITE */
 
 .mam-original-feature {
-  max-width: 940px;
+  max-width: 1040px;
   margin: 82px auto 0;
   display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 42px;
+  grid-template-columns: 250px 1fr;
+  gap: 56px;
   align-items: center;
 }
 
@@ -492,7 +484,7 @@ a {
 
 .mam-original-image {
   width: 100%;
-  max-width: 560px;
+  max-width: 620px;
   margin: 0;
 }
 
@@ -876,9 +868,7 @@ a {
 
 .sip-project-label {
   margin: 0 0 18px;
-
   color: #1676b9;
-
   font-size: 11px;
   line-height: 1.2;
   font-weight: 700;
@@ -890,10 +880,8 @@ a {
 .sip-project-title {
   max-width: 780px;
   margin: 0;
-
   color: #202124;
-
-  font-size: clamp(38px, 4vw, 38px);
+  font-size: clamp(38px, 4vw, 34px);
   line-height: 1.05;
   font-weight: 700;
 
@@ -903,7 +891,6 @@ a {
 .sip-project-copy {
   max-width: 780px;
   margin: 28px 0 0;
-
   color: #697582;
 
   font-size: 17px;
@@ -946,12 +933,10 @@ a {
 .sip-image-caption {
   max-width: 500px;
   margin: 18px auto 0;
-
   color: #7a8591;
 
   font-size: 13px;
   line-height: 1.6;
-
   text-align: center;
 }
 
@@ -966,9 +951,7 @@ a {
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
   gap: 48px;
-
   align-items: start;
 }
 
@@ -1002,9 +985,7 @@ a {
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
   gap: 46px;
-
   align-items: start;
 }
 
@@ -1018,7 +999,6 @@ a {
   margin: 0 0 28px;
 
   color: #202124;
-
   font-size: 16px;
   line-height: 1.35;
   font-weight: 700;
