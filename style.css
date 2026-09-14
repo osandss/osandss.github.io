@@ -484,21 +484,51 @@ a {
 
 .mam-original-visual {
   min-width: 0;
+}
+
+.mam-original-frame {
+  width: 100%;
+  max-width: 640px;
+
+  padding: 20px 20px 24px;
+
+  background: #f7f8f9;
+  border: 1px solid #eceff1;
+}
+
+.mam-original-frame-meta {
+  margin-bottom: 18px;
+
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  color: #9aa4ad;
+
+  font-size: 9px;
+  line-height: 1;
+  font-weight: 700;
+
+  letter-spacing: .1em;
+  text-transform: uppercase;
 }
 
 .mam-original-image {
   width: 100%;
-  max-width: 560px;
+  max-width: none;
+
   margin: 0;
 }
 
 .mam-original-image img {
   width: 100%;
-  border: 1px solid #e8ebee;
+
+  border: 1px solid #e2e6e9;
+
   box-shadow:
-    0 16px 42px rgba(32, 33, 36, .07);
+    0 12px 30px rgba(32, 33, 36, .06);
 }
 
 
