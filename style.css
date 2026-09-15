@@ -1489,16 +1489,13 @@ a {
 
 .intro-copy {
   margin-top: 34px;
-
   font-size: 15px;
   line-height: 1.6;
 }
 
 .hero-project-link {
   grid-template-columns: 30px 1fr auto;
-
   gap: 12px;
-
   padding: 21px 0;
 }
 
@@ -1809,7 +1806,9 @@ a {
   }
 
   .sip-prototype-image {
-    max-width: 100%;
+    max-width: 240px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .sip-image-caption {
@@ -1827,7 +1826,7 @@ a {
   }
 
   .sip-build-item img {
-    max-width: 260px;
+    max-width: 190px;
   }
 
 
@@ -1846,7 +1845,7 @@ a {
   }
 
   .sip-evolution-image img {
-    max-width: 245px;
+    max-width: 185px;
   }
 
   .sip-evolution-copy {
@@ -1863,7 +1862,7 @@ a {
   }
 
   .sip-visual-item img {
-    max-width: 260px;
+    max-width: 190px;
   }
 
 
@@ -1876,7 +1875,7 @@ a {
   }
 
   .sip-final-item img {
-    max-width: 260px;
+    max-width: 190px;
   }
 
   .sip-final-insights {
