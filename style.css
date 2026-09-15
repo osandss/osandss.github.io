@@ -1676,15 +1676,20 @@ a {
   /* SECTION 02 */
 
   .planning-grid {
-    margin-top: 42px;
-    grid-template-columns: 1fr;
-    gap: 42px;
-  }
+     margin-top: 42px;
+     grid-template-columns: 1fr;
+     gap: 38px;
+   }
 
+  .planning-item {
+     justify-content: center;
+   }
+   
   .planning-item img {
-    max-width: 100%;
+     width: 80%;
+     max-width: 320px; 
+     margin: 0 auto;  
   }
-
 
   /* SECTION 03 */
 
