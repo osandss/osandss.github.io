@@ -913,17 +913,18 @@ a {
 
 
 /* =========================================
-   SIP SOBER — PROJECT INTRO
+   PROJECT INTRO — SHARED
 ========================================= */
 
-.sip-intro-section {
+.project-intro {
   padding: 120px 0 105px;
   background: #f7f8fa;
 }
 
-.sip-project-label {
+.project-label {
   margin: 0 0 18px;
   color: #1676b9;
+
   font-size: 11px;
   line-height: 1.2;
   font-weight: 700;
@@ -932,26 +933,27 @@ a {
   text-transform: uppercase;
 }
 
-.sip-project-title {
+.project-title {
   max-width: 850px;
   margin: 0;
+
   color: #202124;
 
   font-size: clamp(30px, 4vw, 34px);
   line-height: 1.08;
   font-weight: 700;
-  letter-spacing: -0.035em;
+  letter-spacing: -.035em;
 }
 
-.sip-project-copy {
+.project-copy {
   max-width: 780px;
   margin: 28px 0 0;
+
   color: #697582;
 
   font-size: 17px;
   line-height: 1.7;
 }
-
 
 /* =========================================
    SIP SOBER — SHARED SECTIONS
@@ -1392,7 +1394,7 @@ a {
 
    /* SIP SOBER */
 
-  .sip-intro-section {
+  .project-intro {
     padding: 95px 0 85px;
   }
 
@@ -1779,26 +1781,26 @@ a {
   }
 
 
-  /* =========================================
-     SIP SOBER
-  ========================================= */
+  /* PROJECT INTRO */
 
-  .sip-intro-section {
-    padding: 72px 0 68px;
-  }
-
-  .sip-project-label {
-    font-size: 10px;
-  }
-
-
-  .sip-project-copy {
-    margin-top: 22px;
-    font-size: 15px;
-    line-height: 1.65;
-  }
-
-
+   .project-intro {
+     padding: 72px 0 68px;
+   }
+   
+   .project-label {
+     font-size: 10px;
+   }
+   
+   .project-title {
+     font-size: 32px;
+   }
+   
+   .project-copy {
+     margin-top: 22px;
+     font-size: 15px;
+     line-height: 1.65;
+   }
+   
   /* SIP SOBER — PROTOTYPE */
 
   .sip-prototype-block {
@@ -1815,7 +1817,7 @@ a {
     margin-top: 16px;
     font-size: 12px;
   }
-
+   
 
   /* SIP SOBER — FIRST APP */
 
