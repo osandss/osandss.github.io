@@ -1584,33 +1584,63 @@ a {
     max-width: 100%;
   }
 
-  /* INSIGHTS */
+  /* INSIGHTS — MOBILE */
 
-  .insight-grid {
-    margin-top: 38px;
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
+   .insight-grid {
+     margin-top: 34px;
+     grid-template-columns: 1fr;
+     gap: 0;
+   }
+   
+   .insight-card {
+     min-height: 0;
+     padding: 22px 6px 24px;
+   
+     background: transparent;
+   
+     border-right: 0;
+     border-top: 1px solid #dce3e8;
+   }
+   
+   .insight-card:first-child {
+     border-top: 1px solid #dce3e8;
+   }
+   
+   .insight-card::before {
+     margin-bottom: 14px;
+     font-size: 10px;
+   }
+   
+   .insight-card h3 {
+     max-width: none;
+     margin-bottom: 8px;
+   
+     font-size: 16px;
+     line-height: 1.3;
+   }
+   
+   .insight-card p {
+     max-width: none;
+   
+     font-size: 13px;
+     line-height: 1.55;
+   }
 
-  .insight-card {
-    min-height: 0;
-    padding: 24px 4px 28px;
-    border-right: 0;
-    border-top: 1px solid #dce3e8;
-  }
 
-  .insight-card:first-child {
-    border-top: 2px solid #1676b9;
-  }
+/* SECTION 01 INSIGHTS */
 
-  .insight-card::before {
-    margin-bottom: 18px;
-  }
+.mam-section-01 .insight-grid {
+  margin-top: 38px;
+  gap: 0;
+}
 
-  .insight-card h3,
-  .insight-card p {
-    max-width: none;
-  }
+.mam-section-01 .insight-card {
+  padding: 22px 6px 24px;
+}
+
+.mam-section-01 .insight-card::before {
+  margin-bottom: 14px;
+}
 
   /* FIRST REDESIGN */
 
@@ -1743,7 +1773,7 @@ a {
   }
 
    .final-insights {
-    margin-top: 60px;
+    margin-top: 42px;
   }
 
 
