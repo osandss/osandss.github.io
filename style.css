@@ -612,70 +612,38 @@ a {
 }
 
 /* =========================================
-   INSIGHT / TAKEAWAY CARDS
+   INSIGHTS / TAKEAWAYS — SHARED
 ========================================= */
 
 .insight-grid {
-  max-width: 900px;
-  margin: 58px auto 0;
+  width: 100%;
+  max-width: 960px;
+  margin: 64px auto 0;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-  counter-reset: insight;
-}
-
-.mam-section-01 .insight-grid {
-  width: 100%;
-  max-width: none;
-  margin-top: 64px;
   gap: 56px;
-}
-
-.mam-section-01 .insight-card {
-  min-height: 0;
-  padding: 24px 0 0;
-  background: transparent;
-  border-top: 1px solid #dce3e8;
-  border-right: 0;
-}
-
-.mam-section-01 .insight-card::before {
-  margin-bottom: 26px;
-  color: #1676b9;
-}
-
-.mam-section-01 .insight-card h3 {
-  max-width: 250px;
-  font-size: 17px;
-}
-
-.mam-section-01 .insight-card p {
-  max-width: 280px;
+  counter-reset: insight;
 }
 
 .insight-card {
   position: relative;
-  min-height: 180px;
-  padding: 28px 34px 30px;
-  background: #ffffff;
-  border-top: 2px solid #1676b9;
-  border-right: 1px solid #e4e8eb;
+  min-height: 0;
+
+  padding: 24px 0 0;
+  background: transparent;
+  border-top: 1px solid #dce3e8;
 
   counter-increment: insight;
-  transition:
-    transform .25s ease,
-    background .25s ease;
-}
-
-.insight-card:last-child {
-  border-right: 0;
 }
 
 .insight-card::before {
   content: "0" counter(insight);
+
   display: block;
-  margin-bottom: 30px;
-  color: #b7c4cf;
+  margin-bottom: 26px;
+  color: #1676b9;
+
   font-size: 11px;
   line-height: 1;
   font-weight: 700;
@@ -683,18 +651,18 @@ a {
 }
 
 .insight-card h3 {
-  max-width: 230px;
+  max-width: 250px;
   margin: 0 0 10px;
-
   color: #202124;
-  font-size: 16px;
+
+  font-size: 17px;
   line-height: 1.3;
   font-weight: 700;
   letter-spacing: -.015em;
 }
 
 .insight-card p {
-  max-width: 245px;
+  max-width: 280px;
   margin: 0;
   color: #697582;
 
@@ -702,21 +670,6 @@ a {
   line-height: 1.6;
 }
 
-@media (hover: hover) {
-
-  .insight-card:hover {
-    transform: translateY(-4px);
-    background: #fafcfd;
-  }
-}
-
-@media (hover: hover) {
-
-  .mam-section-01 .insight-card:hover {
-    transform: none;
-    background: transparent;
-  }
-}
 
 /* =========================================
    SECTION 02 — PLANNING
@@ -1007,7 +960,7 @@ a {
 
 .sip-build-item img {
   width: 100%;
-  max-width: 230px;
+  max-width: 205px;
   margin: 0 auto;
 
   border: none;
@@ -1069,7 +1022,7 @@ a {
 
 .sip-evolution-image img {
   width: 100%;
-  max-width: 210px;
+  max-width: 185px;
   margin: 0 auto;
 
   border: none;
@@ -1107,9 +1060,7 @@ a {
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
   gap: 48px;
-
   align-items: start;
 }
 
@@ -1124,10 +1075,8 @@ a {
 
 .sip-visual-item img {
   width: 100%;
-  max-width: 230px;
-
+  max-width: 205px;
   margin: 0 auto;
-
   border: 1px solid #e8ebee;
 }
 
@@ -1139,12 +1088,10 @@ a {
 .sip-final-grid {
   max-width: 900px;
   margin: 68px auto 0;
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
   gap: 48px;
-
   align-items: start;
 }
 
@@ -1159,10 +1106,8 @@ a {
 
 .sip-final-item img {
   width: 100%;
-  max-width: 230px;
-
+  max-width: 205px;
   margin: 0 auto;
-
   border: 1px solid #e8ebee;
 }
 
@@ -1326,16 +1271,15 @@ a {
 
   .insight-grid {
      grid-template-columns: 1fr;
+     gap: 0;
   }
 
   .insight-card {
-    min-height: 0;
-    border-right: 0;
-    border-top: 1px solid #dce3e8;
+    padding: 24px 6px 28px;
   }
    
   .insight-card:first-child {
-    border-top: 2px solid #1676b9;
+    border-top: 1px solid #dce3e8;
   }
 
   .planning-grid {
@@ -1609,21 +1553,6 @@ a {
      line-height: 1.55;
    }
 
-
-/* SECTION 01 INSIGHTS */
-
-.mam-section-01 .insight-grid {
-  margin-top: 38px;
-  gap: 0;
-}
-
-.mam-section-01 .insight-card {
-  padding: 22px 6px 24px;
-}
-
-.mam-section-01 .insight-card::before {
-  margin-bottom: 14px;
-}
 
   /* FIRST REDESIGN */
 
