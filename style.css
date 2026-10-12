@@ -334,7 +334,7 @@ a {
 
   color: #202124;
 
-  font-size: clamp(42px, 5.5vw, 68px);
+  font-size: clamp(25px, 5.5vw, 40px);
   font-weight: 500;
   line-height: 1.04;
 
@@ -407,7 +407,7 @@ a {
 /* MYABROADMDS IMAGE */
 
 .featured-image-mam {
-  background: #f0ede8;
+  background: #f0f0f0;
 }
 
 .featured-image-mam img {
@@ -484,7 +484,7 @@ a {
 
   color: #202124;
 
-  font-size: clamp(30px, 3.2vw, 40px);
+  font-size: clamp(20px, 3.2vw, 30px);
   font-weight: 500;
   line-height: 1.1;
 
