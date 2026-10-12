@@ -296,8 +296,8 @@ a {
 
 .featured-heading {
   display: grid;
-  grid-template-columns: 1.15fr .85fr;
-  gap: 70px;
+  grid-template-columns: 1.3fr .7fr;
+  gap: 50px;
   align-items: end;
   margin-bottom: 46px;
 }
@@ -314,9 +314,9 @@ a {
   max-width: 640px;
   margin: 0;
   color: #202124;
-  font-size: clamp(32px, 4vw, 46px);
+  font-size: clamp(30px, 3.2vw, 40px);
   line-height: 1.1;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -.045em;
 }
 
@@ -342,8 +342,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 340px;
-  padding: 32px;
+  height: 365px;
+  padding: 18px;
   overflow: hidden;
   background: #f3f5f7;
 }
@@ -362,7 +362,7 @@ a {
 }
 
 .featured-image-sip img {
-  max-height: 295px;
+  max-height: 330px;
   border-radius: 22px;
 }
 
@@ -392,8 +392,9 @@ a {
   max-width: 400px;
   margin: 0 0 16px;
   color: #202124;
-  font-size: clamp(24px, 2.6vw, 31px);
-  line-height: 1.16;
+  font-size: clamp(23px, 2.3vw, 28px);
+  line-height: 1.2;
+  font-weight: 600;
   letter-spacing: -.035em;
 }
 
