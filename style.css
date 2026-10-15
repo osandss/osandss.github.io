@@ -1256,6 +1256,14 @@ a {
   background: #f7f8fa;
 }
 
+.mam-intro-section {
+  background: linear-gradient(135deg, #0a6b9c 0%, #014875 48%, #012d49 100%);
+}
+
+.sip-intro-section {
+  background: linear-gradient(180deg, #23263a 0%, #1a1c2c 100%);
+}
+
 .project-label {
   margin: 0 0 18px;
   color: #1676b9;
@@ -1266,6 +1274,11 @@ a {
 
   letter-spacing: .08em;
   text-transform: uppercase;
+}
+
+.mam-intro-section .project-label,
+.sip-intro-section .project-label {
+  color: rgba(255, 255, 255, .6);
 }
 
 .project-title {
@@ -1280,6 +1293,11 @@ a {
   letter-spacing: -.035em;
 }
 
+.mam-intro-section .project-title,
+.sip-intro-section .project-title {
+  color: #ffffff;
+}
+
 .project-copy {
   max-width: 780px;
   margin: 28px 0 0;
@@ -1288,6 +1306,11 @@ a {
 
   font-size: 17px;
   line-height: 1.7;
+}
+
+.mam-intro-section .project-copy,
+.sip-intro-section .project-copy {
+  color: rgba(255, 255, 255, .8);
 }
 
 /* =========================================
