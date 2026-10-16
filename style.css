@@ -162,6 +162,7 @@ a {
 .portfolio-intro h1 {
   margin: 0;
   color: #202124;
+
   font-size: clamp(72px, 8.8vw, 126px);
   line-height: .82;
   font-weight: 500;
@@ -480,10 +481,13 @@ a {
 
 .featured-project h3 {
   margin: 0 0 15px;
+
   color: #202124;
+
   font-size: clamp(20px, 3.2vw, 30px);
   font-weight: 500;
   line-height: 1.1;
+
   letter-spacing: -.055em;
 }
 
@@ -683,7 +687,7 @@ a {
 ========================================= */
 
 .case-section {
-  padding: 110px 0;
+  padding: 92px 0;
 }
 
 .section-header {
@@ -699,6 +703,7 @@ a {
   letter-spacing: .07em;
   text-transform: uppercase;
 }
+
 .section-title {
   max-width: 850px;
   margin: 0;
@@ -843,7 +848,7 @@ a {
 
 .mam-original-feature {
   width: 100%;
-  margin: 72px 0 0;
+  margin: 64px 0 0;
 
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -945,7 +950,7 @@ a {
 /* FIRST REDESIGN */
 
 .mam-subsection {
-  margin-top: 115px;
+  margin-top: 92px;
 }
 
 .mam-redesign-feature {
@@ -953,7 +958,7 @@ a {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 80px;
+  padding-top: 68px;
   display: grid;
   grid-template-columns: .8fr 1.2fr;
   gap: 90px;
@@ -1011,7 +1016,7 @@ a {
 .insight-grid {
   width: 100%;
   max-width: 960px;
-  margin: 64px auto 0;
+  margin: 56px auto 0;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1042,10 +1047,12 @@ a {
   font-weight: 700;
   letter-spacing: .08em;
 }
+
 .insight-card h3 {
   max-width: 250px;
   margin: 0 0 10px;
   color: #202124;
+
   font-size: 17px;
   line-height: 1.3;
   font-weight: 500;
@@ -1068,7 +1075,7 @@ a {
 
 .planning-grid {
   max-width: 900px;
-  margin: 64px auto 0;
+  margin: 56px auto 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 42px;
@@ -1092,7 +1099,7 @@ a {
 
 .journey-grid {
   max-width: 960px;
-  margin: 68px auto 0;
+  margin: 56px auto 0;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1121,7 +1128,7 @@ a {
 
 .journey-insights {
   max-width: 960px;
-  margin: 64px auto 0;
+  margin: 56px auto 0;
 }
 
 
@@ -1131,7 +1138,7 @@ a {
 
 .build-grid {
   max-width: 960px;
-  margin: 68px auto 0;
+  margin: 56px auto 0;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1172,8 +1179,8 @@ a {
 
 .responsive-block {
   max-width: 960px;
-  margin: 115px auto 0;
-  padding-top: 80px;
+  margin: 92px auto 0;
+  padding-top: 64px;
 
   border-top: 1px solid #eeeeee;
 }
@@ -1227,7 +1234,7 @@ a {
 
 .final-insights {
   max-width: 960px;
-  margin: 80px auto 0;
+  margin: 64px auto 0;
 }
 
 
@@ -1330,7 +1337,9 @@ a {
 .project-title {
   max-width: 850px;
   margin: 0;
+
   color: #202124;
+
   font-size: clamp(30px, 4vw, 34px);
   line-height: 1.08;
   font-weight: 500;
@@ -1372,7 +1381,7 @@ a {
 
 .sip-prototype-block {
   max-width: 380px;
-  margin: 52px auto 0;
+  margin: 48px auto 0;
 }
 
 .sip-prototype-block .image-label {
@@ -1406,7 +1415,7 @@ a {
 
 .sip-build-grid {
   max-width: 900px;
-  margin: 68px auto 0;
+  margin: 56px auto 0;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1440,7 +1449,7 @@ a {
 
 .sip-evolution-grid {
   max-width: 960px;
-  margin: 72px auto 0;
+  margin: 60px auto 0;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1521,7 +1530,7 @@ a {
 
 .sip-visual-grid {
   max-width: 900px;
-  margin: 68px auto 0;
+  margin: 56px auto 0;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1552,7 +1561,7 @@ a {
 
 .sip-final-grid {
   max-width: 900px;
-  margin: 68px auto 0;
+  margin: 56px auto 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
@@ -1577,7 +1586,7 @@ a {
 }
 
 .sip-final-insights {
-  margin-top: 72px;
+  margin-top: 60px;
 }
 
 /* =========================================
@@ -1680,27 +1689,27 @@ a {
      padding: 105px 0 110px;
      background: #ffffff;
    }
-   
+
    .hero-grid {
      grid-template-columns: 1fr;
      gap: 72px;
    }
-   
+
    .portfolio-intro h1 {
      font-size: clamp(72px, 13vw, 104px);
    }
-   
+
    .hero-side {
      max-width: 620px;
    }
-   
+
    .numbered-section::before {
      font-size: 135px;
      right: 24px;
    }
 
   .case-section {
-    padding: 90px 0;
+    padding: 76px 0;
   }
 
   /* MYABROADMDS — SECTION 01 */
@@ -1715,15 +1724,15 @@ a {
 }
 
 .mam-subsection {
-  margin-top: 88px;
+  margin-top: 72px;
 }
 
 .mam-redesign-feature {
   grid-template-columns: 1fr;
   gap: 58px;
 
-  padding-top: 78px;
-  padding-bottom: 78px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .mam-redesign-copy {
@@ -1742,7 +1751,7 @@ a {
   .insight-card {
     padding: 24px 6px 28px;
   }
-   
+
   .insight-card:first-child {
     border-top: 1px solid #dce3e8;
   }
@@ -1773,8 +1782,8 @@ a {
   }
 
   .responsive-block {
-    margin-top: 95px;
-    padding-top: 68px;
+    margin-top: 76px;
+    padding-top: 56px;
   }
 
   .responsive-grid {
@@ -1789,6 +1798,12 @@ a {
 
   .project-intro {
     padding: 95px 0 85px;
+  }
+
+  .mam-intro-section,
+  .sip-intro-section {
+    padding-top: 72px;
+    padding-bottom: 150px;
   }
 
   .sip-build-grid,
@@ -1916,7 +1931,7 @@ a {
   /* GENERAL */
 
   .case-section {
-    padding: 76px 0;
+    padding: 64px 0;
   }
 
   .section-label {
@@ -1924,7 +1939,7 @@ a {
   }
 
   .section-title {
-    font-size: 32px;
+    font-size: 26px;
   }
 
   .section-copy {
@@ -1933,7 +1948,7 @@ a {
   }
 
   .subsection-title {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .subsection-copy {
@@ -1951,7 +1966,7 @@ a {
   ========================================= */
 
   .mam-original-feature {
-    margin-top: 52px;
+    margin-top: 44px;
     grid-template-columns: 1fr;
     gap: 28px;
   }
@@ -1979,41 +1994,41 @@ a {
   /* INSIGHTS — MOBILE */
 
    .insight-grid {
-     margin-top: 34px;
+     margin-top: 30px;
      grid-template-columns: 1fr;
      gap: 0;
    }
-   
+
    .insight-card {
      min-height: 0;
      padding: 22px 6px 24px;
-   
+
      background: transparent;
-   
+
      border-right: 0;
      border-top: 1px solid #dce3e8;
    }
-   
+
    .insight-card:first-child {
      border-top: 1px solid #dce3e8;
    }
-   
+
    .insight-card::before {
      margin-bottom: 14px;
      font-size: 10px;
    }
-   
+
    .insight-card h3 {
      max-width: none;
      margin-bottom: 8px;
-   
+
      font-size: 16px;
      line-height: 1.3;
    }
-   
+
    .insight-card p {
      max-width: none;
-   
+
      font-size: 13px;
      line-height: 1.55;
    }
@@ -2022,11 +2037,11 @@ a {
   /* FIRST REDESIGN */
 
   .mam-subsection {
-    margin-top: 76px;
+    margin-top: 60px;
   }
 
   .mam-redesign-feature {
-    padding-top: 58px;
+    padding-top: 48px;
     grid-template-columns: 1fr;
     gap: 42px;
   }
@@ -2048,7 +2063,7 @@ a {
   /* SECTION 02 */
 
   .planning-grid {
-     margin-top: 42px;
+     margin-top: 36px;
      grid-template-columns: 1fr;
      gap: 38px;
    }
@@ -2056,17 +2071,17 @@ a {
   .planning-item {
      justify-content: center;
    }
-   
+
   .planning-item img {
      width: 80%;
-     max-width: 320px; 
-     margin: 0 auto;  
+     max-width: 320px;
+     margin: 0 auto;
   }
 
   /* SECTION 03 */
 
   .journey-grid {
-    margin-top: 46px;
+    margin-top: 38px;
     grid-template-columns: 1fr;
     gap: 54px;
   }
@@ -2084,14 +2099,14 @@ a {
   }
 
   .journey-insights {
-    margin-top: 50px;
+    margin-top: 42px;
   }
 
 
   /* SECTION 04 */
 
   .build-grid {
-    margin-top: 46px;
+    margin-top: 38px;
     grid-template-columns: 1fr;
     gap: 58px;
   }
@@ -2115,12 +2130,12 @@ a {
   /* RESPONSIVE DESIGN */
 
   .responsive-block {
-    margin-top: 76px;
-    padding-top: 58px;
+    margin-top: 60px;
+    padding-top: 48px;
   }
 
   .responsive-grid {
-    margin-top: 38px;
+    margin-top: 32px;
     grid-template-columns: 1fr;
     gap: 52px;
   }
@@ -2136,7 +2151,7 @@ a {
    .responsive-item img {
      height: auto;
    }
-   
+
   .responsive-item:first-child img {
     width: 100%;
     max-width: 240px;
@@ -2150,7 +2165,7 @@ a {
   }
 
    .final-insights {
-    margin-top: 42px;
+    margin-top: 36px;
   }
 
 
@@ -2159,25 +2174,31 @@ a {
    .project-intro {
      padding: 72px 0 68px;
    }
-   
+
+   .mam-intro-section,
+   .sip-intro-section {
+     padding-top: 56px;
+     padding-bottom: 130px;
+   }
+
    .project-label {
      font-size: 10px;
    }
-   
+
    .project-title {
-     font-size: 32px;
+     font-size: 28px;
    }
-   
+
    .project-copy {
      margin-top: 22px;
      font-size: 15px;
      line-height: 1.65;
    }
-   
+
   /* SIP SOBER — PROTOTYPE */
 
   .sip-prototype-block {
-    margin-top: 44px;
+    margin-top: 38px;
   }
 
   .sip-prototype-image {
@@ -2190,12 +2211,12 @@ a {
     margin-top: 16px;
     font-size: 12px;
   }
-   
+
 
   /* SIP SOBER — FIRST APP */
 
   .sip-build-grid {
-    margin-top: 46px;
+    margin-top: 38px;
     grid-template-columns: 1fr;
     gap: 54px;
   }
@@ -2208,7 +2229,7 @@ a {
   /* SIP SOBER — EVOLUTION */
 
   .sip-evolution-grid {
-    margin-top: 50px;
+    margin-top: 42px;
     grid-template-columns: 1fr;
     gap: 74px;
   }
@@ -2231,7 +2252,7 @@ a {
   /* SIP SOBER — VISUAL IDENTITY */
 
   .sip-visual-grid {
-    margin-top: 46px;
+    margin-top: 38px;
     grid-template-columns: 1fr;
     gap: 54px;
   }
@@ -2244,7 +2265,7 @@ a {
   /* SIP SOBER — CURRENT APP */
 
   .sip-final-grid {
-    margin-top: 46px;
+    margin-top: 38px;
     grid-template-columns: 1fr;
     gap: 54px;
   }
@@ -2254,7 +2275,7 @@ a {
   }
 
   .sip-final-insights {
-    margin-top: 58px;
+    margin-top: 46px;
   }
 
 }
