@@ -1260,8 +1260,8 @@ a {
 .sip-intro-section {
   position: relative;
   overflow: hidden;
-  padding-top: 70px;
-  padding-bottom: 280px;
+  padding-top: 90px;
+  padding-bottom: 190px;
 }
 
 .mam-intro-section {
@@ -1288,7 +1288,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 260px;
+  height: 170px;
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
