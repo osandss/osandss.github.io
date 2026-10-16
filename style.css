@@ -1256,12 +1256,46 @@ a {
   background: #f7f8fa;
 }
 
+.mam-intro-section,
+.sip-intro-section {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 185px;
+}
+
 .mam-intro-section {
   background: linear-gradient(135deg, #0a6b9c 0%, #014875 48%, #012d49 100%);
 }
 
 .sip-intro-section {
-  background: linear-gradient(180deg, #23263a 0%, #1a1c2c 100%);
+  background: linear-gradient(180deg, #262940 0%, #1a1c2c 100%);
+}
+
+.mam-intro-section::before,
+.sip-intro-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 88% 10%, rgba(255, 255, 255, .12), transparent 55%);
+  pointer-events: none;
+}
+
+.mam-intro-section::after,
+.sip-intro-section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 150px;
+  background: linear-gradient(180deg, transparent 0%, #ffffff 100%);
+  pointer-events: none;
+}
+
+.mam-intro-section .container,
+.sip-intro-section .container {
+  position: relative;
+  z-index: 1;
 }
 
 .project-label {
