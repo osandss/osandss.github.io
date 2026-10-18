@@ -1172,28 +1172,83 @@ a {
 }
 
 
-
 /* =========================================
    SECTION 02 — PLANNING
 ========================================= */
 
+.mam-section-02 {
+  padding-top: 65px;
+  padding-bottom: 70px;
+}
+
+/* PLANNING IMAGES */
+
 .planning-grid {
-  max-width: 900px;
-  margin: 56px auto 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 42px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  max-width: 900px;
+  margin: 30px auto 0;
   align-items: start;
 }
 
 .planning-item {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 0;
+  margin: 0;
 }
 
 .planning-item img {
+  display: block;
   width: 100%;
-  max-width: 400px;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* IMAGE CAPTIONS */
+
+.planning-item figcaption {
+  margin-top: 12px;
+  color: #929ca5;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: .1em;
+}
+
+/* TABLET */
+
+@media (max-width: 980px) {
+  .mam-section-02 {
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+
+  .planning-grid {
+    gap: 24px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .mam-section-02 {
+    padding-top: 50px;
+    padding-bottom: 55px;
+  }
+
+  .planning-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 25px;
+  }
+
+  .planning-item figcaption {
+    margin-top: 10px;
+  }
 }
 
 
@@ -1844,10 +1899,6 @@ a {
     border-top: 1px solid #dce3e8;
   }
 
-  .planning-grid {
-    gap: 30px;
-  }
-
   .journey-grid {
     grid-template-columns: 1fr 1fr;
     gap: 42px 30px;
@@ -1977,9 +2028,9 @@ a {
 
   /* GENERAL */
 
-  .case-section {
-    padding: 64px 0;
-  }
+  .case-section:not(.mam-section-02) {
+     padding: 64px 0;
+   }
 
   .section-label {
     font-size: 10px;
@@ -2104,25 +2155,6 @@ a {
 
   .mam-first-redesign-image {
     max-width: 100%;
-  }
-
-
-  /* SECTION 02 */
-
-  .planning-grid {
-     margin-top: 36px;
-     grid-template-columns: 1fr;
-     gap: 38px;
-   }
-
-  .planning-item {
-     justify-content: center;
-   }
-
-  .planning-item img {
-     width: 80%;
-     max-width: 320px;
-     margin: 0 auto;
   }
 
   /* SECTION 03 */
