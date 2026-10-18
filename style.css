@@ -362,16 +362,16 @@ a {
 
 .featured-project {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr);
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
   align-items: center;
-  gap: 45px;
+  gap: 50px;
   min-width: 0;
 }
 
 /* ALTERNATING SECOND PROJECT */
 
 .featured-project-reverse {
-  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
 }
 
 .featured-project-reverse .featured-image {
@@ -462,7 +462,7 @@ a {
 }
 
 .featured-description {
-  max-width: 400px;
+  max-width: 480px;
   margin: 0;
   color: #697582;
   font-size: 14px;
