@@ -919,13 +919,13 @@ a {
 
 .mam-chapter-stage {
   display: grid;
-  grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr);
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
   align-items: center;
-  gap: 55px;
+  gap: 50px;
 }
 
 .mam-chapter-stage-copy {
-  max-width: 340px;
+  max-width: 400px;
 }
 
 .mam-chapter-stage-label {
