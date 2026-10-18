@@ -1022,6 +1022,265 @@ a {
 }
 
 
+
+/* =========================================
+   MYABROADMDS — CHAPTER 01 REDESIGN
+========================================= */
+
+.mam-chapter-one {
+  padding: 75px 0 85px;
+  background: #ffffff;
+  border-top: 1px solid #edf0f2;
+}
+
+/* CHAPTER HEADING */
+
+.mam-chapter-heading {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+.mam-chapter-heading-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+}
+
+.mam-chapter-eyebrow {
+  margin: 0 0 18px;
+  color: #1676b9;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+.mam-chapter-heading h2 {
+  margin: 0;
+  color: #202124;
+  font-size: clamp(27px, 3vw, 34px);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -.05em;
+}
+
+.mam-chapter-heading-copy > p:last-child {
+  max-width: 700px;
+  margin: 18px 0 0;
+  color: #697582;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.mam-chapter-watermark {
+  color: #f4f6f7;
+  font-size: 135px;
+  font-weight: 700;
+  line-height: .8;
+  letter-spacing: -.08em;
+  pointer-events: none;
+}
+
+/* BEFORE / AFTER STAGES */
+
+.mam-chapter-stage {
+  display: grid;
+  grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr);
+  align-items: center;
+  gap: 55px;
+}
+
+.mam-chapter-stage-copy {
+  max-width: 340px;
+}
+
+.mam-chapter-stage-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 20px;
+  color: #1676b9;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+.mam-stage-line {
+  width: 24px;
+  height: 2px;
+  background: #1676b9;
+}
+
+.mam-chapter-stage-copy h3 {
+  margin: 0 0 16px;
+  color: #202124;
+  font-size: clamp(23px, 2.4vw, 29px);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -.045em;
+}
+
+.mam-chapter-stage-copy > p:not(.mam-chapter-stage-label):not(.mam-chapter-stage-note) {
+  margin: 0;
+  color: #697582;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* SCREENSHOTS */
+
+.mam-chapter-image {
+  min-width: 0;
+  margin: 0;
+}
+
+.mam-chapter-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e7eaed;
+  box-shadow: 0 15px 38px rgba(32, 33, 36, .08);
+}
+
+.mam-chapter-image figcaption {
+  margin-top: 12px;
+  color: #929ca5;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .1em;
+}
+
+/* KEY FINDINGS */
+
+.mam-chapter-findings {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 35px;
+  margin: 42px 0 0;
+}
+
+.mam-chapter-finding {
+  padding-top: 20px;
+  border-top: 1px solid #dce3e8;
+}
+
+.mam-chapter-finding span {
+  display: block;
+  margin-bottom: 18px;
+  color: #1676b9;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.mam-chapter-finding h4 {
+  margin: 0 0 9px;
+  color: #202124;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -.035em;
+}
+
+.mam-chapter-finding p {
+  margin: 0;
+  color: #697582;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* FIRST REDESIGN */
+
+.mam-chapter-stage-after {
+  margin-top: 70px;
+  padding-top: 55px;
+  border-top: 1px solid #e7eaed;
+}
+
+.mam-chapter-stage-note {
+  margin: 25px 0 0;
+  color: #1676b9;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.7;
+  letter-spacing: .06em;
+}
+
+/* TABLET */
+
+@media (max-width: 980px) {
+  .mam-chapter-one {
+    padding: 65px 0 75px;
+  }
+
+  .mam-chapter-stage {
+    gap: 32px;
+  }
+
+  .mam-chapter-watermark {
+    font-size: 105px;
+  }
+
+  .mam-chapter-findings {
+    gap: 22px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .mam-chapter-one {
+    padding: 55px 0 65px;
+  }
+
+  .mam-chapter-heading {
+    margin-bottom: 35px;
+  }
+
+  .mam-chapter-heading h2 {
+    font-size: 28px;
+  }
+
+  .mam-chapter-heading-copy > p:last-child {
+    font-size: 14px;
+  }
+
+  .mam-chapter-watermark {
+    display: none;
+  }
+
+  .mam-chapter-stage {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .mam-chapter-stage-copy {
+    max-width: 100%;
+  }
+
+  .mam-chapter-findings {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    margin-top: 35px;
+  }
+
+  .mam-chapter-finding {
+    padding-top: 15px;
+  }
+
+  .mam-chapter-finding span {
+    margin-bottom: 10px;
+  }
+
+  .mam-chapter-stage-after {
+    margin-top: 45px;
+    padding-top: 40px;
+  }
+}
+
+
+
 /* =========================================
    SECTION 02 — PLANNING
 ========================================= */
