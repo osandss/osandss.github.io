@@ -1203,7 +1203,7 @@ a {
 /* IMAGE CAPTIONS */
 
 .planning-item figcaption {
-  margin-top: 12px;
+  margin: 0 0 16px;
   color: #929ca5;
   font-size: 10px;
   font-weight: 600;
@@ -1239,7 +1239,7 @@ a {
   }
 
   .planning-item figcaption {
-    margin-top: 10px;
+    margin-bottom: 12px;
   }
 }
 
