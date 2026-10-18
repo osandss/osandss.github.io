@@ -1244,43 +1244,176 @@ a {
 }
 
 
+
 /* =========================================
-   SECTION 03 — JOURNEY
+   SECTION 03 — USER JOURNEY
 ========================================= */
 
+.mam-section-03 {
+  padding-top: 70px;
+  padding-bottom: 75px;
+}
+
+/* CHAPTER INTRO */
+
+.mam-section-03 .section-header {
+  max-width: 780px;
+}
+
+.mam-section-03 .section-copy {
+  max-width: 720px;
+}
+
+/* HOMEPAGE EVOLUTION */
+
 .journey-grid {
-  max-width: 960px;
-  margin: 56px auto 0;
-
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 32px;
+  max-width: 1000px;
+  margin: 38px auto 0;
   align-items: start;
 }
 
 .journey-item {
   min-width: 0;
+  margin: 0;
 }
 
-.journey-item .image-label {
-  text-align: center;
-  min-height: 24px;
+.journey-label {
+  display: block;
+  min-height: 30px;
+  margin-bottom: 16px;
+
+  color: #929ca5;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: .1em;
 }
 
-.journey-item img {
+/* SCREENSHOTS */
+
+.journey-image {
   width: 100%;
-  max-width: 260px;
-
-  margin: 0 auto;
-
-  border: 1px solid #eceff2;
+  border: 1px solid #e7eaed;
+  background: #ffffff;
 }
 
-.journey-insights {
-  max-width: 960px;
-  margin: 56px auto 0;
+.journey-image img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
+
+/* SHORT DESCRIPTIONS */
+
+.journey-description {
+  max-width: 290px;
+  margin: 16px 0 0;
+
+  color: #697582;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+/* COMPACT TAKEAWAY */
+
+.journey-takeaway {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  align-items: start;
+  gap: 35px;
+
+  max-width: 1000px;
+  margin: 42px auto 0;
+  padding-top: 24px;
+
+  border-top: 1px solid #dce3e8;
+}
+
+.journey-takeaway-label {
+  color: #1676b9;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: .12em;
+}
+
+.journey-takeaway p {
+  max-width: 620px;
+  margin: 0;
+
+  color: #202124;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -.02em;
+}
+
+/* TABLET */
+
+@media (max-width: 980px) {
+  .mam-section-03 {
+    padding-top: 60px;
+    padding-bottom: 65px;
+  }
+
+  .journey-grid {
+    gap: 20px;
+  }
+
+  .journey-description {
+    font-size: 12px;
+  }
+
+  .journey-takeaway {
+    grid-template-columns: 140px minmax(0, 1fr);
+    gap: 24px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .mam-section-03 {
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+
+  .journey-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin-top: 30px;
+  }
+
+  .journey-label {
+    min-height: 0;
+    margin-bottom: 12px;
+  }
+
+  .journey-image {
+    max-width: 100%;
+  }
+
+  .journey-description {
+    max-width: 100%;
+    margin-top: 12px;
+    font-size: 13px;
+  }
+
+  .journey-takeaway {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 35px;
+    padding-top: 22px;
+  }
+
+  .journey-takeaway p {
+    font-size: 16px;
+  }
+}
+
 
 
 /* =========================================
@@ -1891,16 +2024,6 @@ a {
     border-top: 1px solid #dce3e8;
   }
 
-  .journey-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 42px 30px;
-  }
-
-  .journey-item:last-child {
-    grid-column: 1 / -1;
-    max-width: 50%;
-    margin: 0 auto;
-  }
 
   .build-grid {
     grid-template-columns: 1fr;
@@ -2020,7 +2143,7 @@ a {
 
   /* GENERAL */
 
-  .case-section:not(.mam-section-02) {
+  .case-section:not(.mam-section-02):not(.mam-section-03) {
      padding: 64px 0;
    }
 
@@ -2147,30 +2270,6 @@ a {
 
   .mam-first-redesign-image {
     max-width: 100%;
-  }
-
-  /* SECTION 03 */
-
-  .journey-grid {
-    margin-top: 38px;
-    grid-template-columns: 1fr;
-    gap: 54px;
-  }
-
-  .journey-item:last-child {
-    grid-column: auto;
-    max-width: none;
-    margin: 0;
-  }
-
-  .journey-item img {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  .journey-insights {
-    margin-top: 42px;
   }
 
 
