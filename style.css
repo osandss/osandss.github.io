@@ -298,13 +298,14 @@ a {
 
 
 
+
 /* =========================================
-   FEATURED WORK — EDITORIAL SHOWCASE
+   FEATURED WORK — ALTERNATING SHOWCASE
 ========================================= */
 
 .featured-work {
-  padding: 100px 0 145px;
-  background: #fff;
+  padding: 100px 0 125px;
+  background: #ffffff;
   border-top: 1px solid #e8ebed;
 }
 
@@ -312,8 +313,8 @@ a {
 
 .featured-heading {
   display: flex;
+  align-items: flex-end;
   justify-content: space-between;
-  align-items: end;
   gap: 60px;
   margin-bottom: 65px;
   padding-bottom: 35px;
@@ -351,21 +352,36 @@ a {
   line-height: 1.7;
 }
 
-/* ASYMMETRIC PROJECT LAYOUT */
+/* PROJECT SHOWCASE */
 
-.featured-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
-  gap: 65px;
-  align-items: start;
+.featured-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 105px;
 }
 
 .featured-project {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr);
+  align-items: center;
+  gap: 65px;
   min-width: 0;
 }
 
-.featured-project:nth-child(2) {
-  margin-top: 135px;
+/* ALTERNATING SECOND PROJECT */
+
+.featured-project-reverse {
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+}
+
+.featured-project-reverse .featured-image {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.featured-project-reverse .featured-project-details {
+  grid-column: 1;
+  grid-row: 1;
 }
 
 /* PROJECT IMAGES */
@@ -375,56 +391,44 @@ a {
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 420px;
+  padding: 30px;
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .featured-image img {
   display: block;
-  max-width: 100%;
-  max-height: 100%;
   width: auto;
   height: auto;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
-  transition: transform .4s ease;
 }
 
-/* MYABROADMDS — LARGER FEATURE */
-
 .featured-image-mam {
-  height: 470px;
-  padding: 28px;
   background: #f0f0f0;
 }
 
-.featured-image-mam img {
-  max-height: 410px;
-}
-
-/* SIP SOBER — OFFSET FEATURE */
-
 .featured-image-sip {
-  height: 430px;
-  padding: 25px;
   background: #eae6e1;
 }
 
 .featured-image-sip img {
-  max-height: 380px;
-  border-radius: 20px;
+  border-radius: 22px;
 }
 
 /* PROJECT DETAILS */
 
 .featured-project-details {
-  padding: 27px 2px 0;
+  min-width: 0;
 }
 
 .featured-project-meta {
   display: flex;
   align-items: center;
   gap: 13px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .featured-number {
@@ -435,7 +439,8 @@ a {
 
 .featured-meta-divider {
   width: 1px;
-  height: 14px;
+  height: 15px;
+  flex-shrink: 0;
   background: #d5dbe0;
 }
 
@@ -443,100 +448,85 @@ a {
   color: #7e8892;
   font-size: 10px;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.6;
   letter-spacing: .08em;
 }
 
 .featured-project h3 {
-  margin: 0 0 14px;
+  margin: 0 0 18px;
   color: #202124;
-  font-size: clamp(30px, 3vw, 40px);
+  font-size: clamp(36px, 4vw, 54px);
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1.08;
   letter-spacing: -.055em;
 }
 
 .featured-description {
-  max-width: 460px;
+  max-width: 400px;
   margin: 0;
   color: #697582;
-  font-size: 14px;
-  line-height: 1.75;
+  font-size: 15px;
+  line-height: 1.8;
 }
+
+/* PROJECT LINKS */
 
 .featured-view-link {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  gap: 36px;
-  margin-top: 24px;
-  padding-bottom: 9px;
+  gap: 40px;
+  margin-top: 30px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #1676b9;
   color: #202124;
   font-size: 13px;
   font-weight: 600;
+  transition: color .2s ease;
 }
 
 .featured-view-link span {
   color: #1676b9;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1;
-  transition: transform .25s ease;
 }
 
-/* HOVER */
-
-@media (hover: hover) {
-  .featured-image:hover img {
-    transform: scale(1.025);
-  }
-
-  .featured-view-link:hover {
-    color: #1676b9;
-  }
-
-  .featured-view-link:hover span {
-    transform: translate(3px, -3px);
-  }
+.featured-view-link:hover {
+  color: #1676b9;
 }
 
 /* TABLET */
 
 @media (max-width: 980px) {
   .featured-work {
-    padding: 85px 0 110px;
+    padding: 80px 0 100px;
   }
 
   .featured-heading {
-    gap: 35px;
-    margin-bottom: 48px;
-  }
-
-  .featured-grid {
     gap: 30px;
+    margin-bottom: 50px;
   }
 
-  .featured-project:nth-child(2) {
-    margin-top: 85px;
+  .featured-showcase {
+    gap: 80px;
   }
 
-  .featured-image-mam {
-    height: 350px;
-    padding: 20px;
+  .featured-project,
+  .featured-project-reverse {
+    gap: 35px;
   }
 
-  .featured-image-sip {
-    height: 325px;
-    padding: 20px;
-  }
-
-  .featured-image-mam img,
-  .featured-image-sip img {
-    max-height: 100%;
+  .featured-image {
+    height: 340px;
+    padding: 22px;
   }
 
   .featured-project h3 {
-    font-size: 30px;
+    font-size: 38px;
+  }
+
+  .featured-description {
+    font-size: 14px;
   }
 }
 
@@ -544,7 +534,7 @@ a {
 
 @media (max-width: 600px) {
   .featured-work {
-    padding: 70px 0 95px;
+    padding: 70px 0 90px;
   }
 
   .featured-heading {
@@ -564,31 +554,29 @@ a {
     font-size: 13px;
   }
 
-  .featured-grid {
-    grid-template-columns: 1fr;
-    gap: 65px;
+  .featured-showcase {
+    gap: 70px;
   }
 
-  .featured-project:nth-child(2) {
-    margin-top: 0;
+  .featured-project,
+  .featured-project-reverse {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 25px;
   }
 
-  .featured-image-mam {
+  .featured-image {
     height: 310px;
-    padding: 20px;
+    padding: 22px;
   }
 
   .featured-image-sip {
     height: 340px;
-    padding: 20px;
-  }
-
-  .featured-project-details {
-    padding: 23px 0 0;
   }
 
   .featured-project-meta {
-    margin-bottom: 17px;
+    margin-bottom: 18px;
   }
 
   .featured-project-name {
@@ -596,11 +584,17 @@ a {
   }
 
   .featured-project h3 {
-    font-size: 34px;
+    font-size: 36px;
+    margin-bottom: 14px;
   }
 
   .featured-description {
     font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .featured-view-link {
+    margin-top: 24px;
   }
 }
 
