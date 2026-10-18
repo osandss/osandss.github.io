@@ -744,7 +744,7 @@ a {
 
   color: #f5f7f8;
 
-  font-size: clamp(105px, 14vw, 185px);
+  font-size: clamp(100px, 12vw, 155px);
   line-height: .8;
   font-weight: 700;
   letter-spacing: -.08em;
@@ -768,7 +768,7 @@ a {
 ========================================= */
 
 .mam-section-01 {
-  padding-top: 85px;
+  padding-top: 65px;
   background: #ffffff;
 }
 
@@ -801,12 +801,12 @@ a {
 
 .mam-original-feature {
   width: 100%;
-  margin: 64px 0 0;
+  margin: 45px 0 0;
 
   display: grid;
   grid-template-columns: 300px 1fr;
 
-  gap: 90px;
+  gap: 60px;
   align-items: center;
 }
 
@@ -969,11 +969,11 @@ a {
 .insight-grid {
   width: 100%;
   max-width: 960px;
-  margin: 56px auto 0;
+  margin: 42px auto 0;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 56px;
+  gap: 40px;
   counter-reset: insight;
 }
 
