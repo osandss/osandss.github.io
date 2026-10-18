@@ -859,7 +859,7 @@ a {
 ========================================= */
 
 .mam-chapter-one {
-  padding: 75px 0 85px;
+  padding: 75px 0 65px;
   background: #ffffff;
   border-top: 1px solid #edf0f2;
 }
@@ -1024,8 +1024,8 @@ a {
 /* FIRST REDESIGN */
 
 .mam-chapter-stage-after {
-  margin-top: 70px;
-  padding-top: 55px;
+  margin-top: 55px;
+  padding-top: 45px;
   border-top: 1px solid #e7eaed;
 }
 
