@@ -185,7 +185,7 @@ a:hover {
 }
 
 .card-sip {
-  background: var(--navy);
+  background: var(--soft);
 }
 
 .card-sip img {
@@ -368,7 +368,7 @@ a:hover {
 
 .footer-cta {
   font-family: var(--display);
-  font-size: 28px;
+  font-size: 23px;
   font-weight: 600;
   letter-spacing: -.02em;
   text-decoration: none;
