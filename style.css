@@ -260,8 +260,9 @@ a:hover {
 .before-after {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
-  margin-bottom: 64px;
+  gap: 20px;
+  max-width: 900px;
+  margin-bottom: 56px;
 }
 
 .before-after figure {
@@ -270,12 +271,15 @@ a:hover {
 
 .before-after img {
   width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top center;
   border: 1px solid var(--line);
   border-radius: 6px;
 }
 
 .before-after figcaption {
-  margin-top: 10px;
+  margin-top: 8px;
   color: var(--muted);
   font-size: 14px;
 }
@@ -284,35 +288,32 @@ a:hover {
 
 .sip-panel {
   margin-bottom: 56px;
-  padding: 36px 24px 28px;
-  background: var(--navy);
-  border-radius: 6px;
 }
 
 .sip-screens {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 170px));
-  justify-content: center;
-  gap: 24px;
+  grid-template-columns: repeat(3, minmax(0, 190px));
+  justify-content: start;
+  gap: 20px;
 }
 
 .sip-screens img {
   width: 100%;
-  border-radius: 18px;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(17, 17, 17, .12);
 }
 
 .sip-stats {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px 40px;
-  margin-top: 28px;
-  color: #C9CFDD;
+  gap: 8px 32px;
+  margin-top: 24px;
+  color: var(--muted);
   font-size: 14px;
 }
 
 .sip-stats strong {
-  color: #F2F4F8;
+  color: var(--ink);
   font-weight: 500;
 }
 
@@ -487,10 +488,6 @@ a:hover {
   .before-after,
   .sip-panel {
     margin-bottom: 48px;
-  }
-
-  .sip-panel {
-    padding: 32px 16px 28px;
   }
 
   .sip-screens {
