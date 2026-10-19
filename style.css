@@ -186,10 +186,13 @@ a:hover {
 
 .card-sip {
   background: var(--soft);
+  padding: 12px;
 }
 
 .card-sip img {
-  border-radius: 18px;
+  height: 100%;
+  max-height: none;
+  border-radius: 0;
 }
 
 .project-card h2 {
