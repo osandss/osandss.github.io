@@ -79,7 +79,7 @@ a:hover {
 
 .nav-name {
   font-family: var(--display);
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -148,7 +148,7 @@ a:hover {
 .work-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 28px;
+  gap: 32px;
 }
 
 .project-card {
@@ -159,9 +159,9 @@ a:hover {
 }
 
 .project-card-image {
-  aspect-ratio: 3 / 2;
-  margin-bottom: 12px;
-  padding: 24px;
+  aspect-ratio: 4 / 3;
+  margin-bottom: 14px;
+  padding: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,17 +185,17 @@ a:hover {
 }
 
 .card-sip {
-  background: var(--soft);
+  background: var(--navy);
 }
 
 .card-sip img {
-  border-radius: 12px;
+  border-radius: 18px;
 }
 
 .project-card h2 {
   margin: 0;
   font-family: var(--display);
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: -.02em;
@@ -204,7 +204,7 @@ a:hover {
 .project-card p {
   margin: 0;
   color: var(--body);
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .project-card .tags {
