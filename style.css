@@ -149,8 +149,6 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 28px;
-  max-width: 920px;
-  margin-left: 0;
 }
 
 .project-card {
