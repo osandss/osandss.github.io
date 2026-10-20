@@ -956,8 +956,11 @@ a {
 /* SCREENSHOTS */
 
 .mam-chapter-image {
+  width: 100%;
+  max-width: 480px;
   min-width: 0;
   margin: 0;
+  justify-self: end;
 }
 
 .mam-chapter-image img {
