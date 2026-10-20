@@ -1390,6 +1390,43 @@ a {
 }
 
 
+/* =========================================
+   USER JOURNEY — SUBSECTION OF 02
+========================================= */
+
+.mam-journey-sub {
+  max-width: 1000px;
+  margin: 56px auto 0;
+  padding-top: 36px;
+  border-top: 1px solid #e7eaed;
+}
+
+.mam-journey-sub-copy {
+  max-width: 620px;
+}
+
+.mam-journey-sub-copy h3 {
+  margin: 0 0 14px;
+  color: #202124;
+  font-size: clamp(21px, 2.2vw, 25px);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -.045em;
+}
+
+.mam-journey-sub-copy > p:not(.mam-chapter-stage-label) {
+  margin: 0;
+  color: #697582;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .mam-journey-sub {
+    margin-top: 42px;
+    padding-top: 28px;
+  }
+}
 
 /* =========================================
    MYABROADMDS — CHAPTER 04
