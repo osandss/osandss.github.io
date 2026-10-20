@@ -1791,6 +1791,8 @@ a {
 }
 
 .sip-intro-section {
+  padding-top: 80px;
+  padding-bottom: 125px;
   background: linear-gradient(180deg, #262940 0%, #1a1c2c 100%);
 }
 
