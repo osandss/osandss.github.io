@@ -1450,14 +1450,20 @@ a {
 }
 
 .mam-build-feature-image {
+  width: 100%;
+  max-width: 480px;
   min-width: 0;
   margin: 0;
+  justify-self: end;
 }
 
 .mam-build-feature-image img {
   display: block;
   width: 100%;
   height: auto;
+  max-height: 520px;
+  object-fit: cover;
+  object-position: top center;
   border: 1px solid #e7eaed;
 }
 
