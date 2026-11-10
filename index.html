@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
   <!-- Google tag (gtag.js) -->
@@ -9,14 +8,17 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-SRD9YLBJ3N');
   </script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olivia Sandstedt — Web Designer, Developer &amp; Digital Marketer</title>
+  <meta name="description" content="Portfolio of Olivia Sandstedt, a web designer, developer and digital marketer in New York City.">
 
-  <title>Olivia Sandstedt — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -26,1029 +28,353 @@
   <!-- =========================
        NAVIGATION
   ========================== -->
-
   <header class="site-header">
     <div class="container nav">
-
-      <a href="#about" class="nav-name">
-        Olivia Sandstedt
-      </a>
-
-      <nav class="nav-links">
+      <a href="#top" class="nav-name">Olivia Sandstedt</a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#work">Work</a>
         <a href="#about">About</a>
-        <a href="#myabroadmds">MyAbroadMDs</a>
-        <a href="#sip-sober">Sip Sober</a>
+        <a href="#contact">Contact</a>
       </nav>
-
     </div>
   </header>
 
   <main>
 
     <!-- =========================
-         ABOUT / PORTFOLIO INTRO
+         INTRO
     ========================== -->
-    
-  <section class="portfolio-intro" id="about">
-    <div class="container hero-redesign">
-  
-      <div class="hero-topline">
-        <span>PORTFOLIO / 2026</span>
-        <span>WEB DESIGN · DEVELOPMENT · DIGITAL MARKETING</span>
-      </div>
-  
-      <div class="hero-content">
-        <p class="hero-kicker">WEB DESIGNER · DEVELOPER · DIGITAL MARKETER</p>
-  
-        <h1>
-          Olivia<br>
-          Sandstedt<span class="hero-period">.</span>
-        </h1>
-  
-        <div class="hero-bottom">
-          <p class="hero-description">
-            I design and build websites and digital products,
-            combining creative thinking with technical development.
-            My work spans WordPress, digital marketing, and
-            independently developed iOS apps.
-          </p>
-  
-          <a href="#featured-work" class="hero-cta">
-            Explore my work
-            <span aria-hidden="true">↗</span>
-          </a>
-        </div>
-      </div>
-  
-      <div class="hero-footer">
-        <span>SELECTED WORK BELOW</span>
-        <span aria-hidden="true">↓</span>
-      </div>
-  
-    </div>
-  </section>
-
-
-    
-<!-- =========================
-     FEATURED WORK — EDITORIAL
-========================== -->
-
-
-<section class="featured-work" id="featured-work">
-  <div class="container">
-
-    <!-- SECTION INTRO -->
-    <div class="featured-heading">
-      <div>
-        <p class="featured-eyebrow">
-          FEATURED WORK <span>/ 01 — 02</span>
-        </p>
-        <h2>Selected projects.</h2>
-      </div>
-
-      <p class="featured-intro">
-        A look at my work across web design,
-        development, and digital products.
-      </p>
-    </div>
-
-    <div class="featured-showcase">
-
-      <!-- PROJECT 01: MYABROADMDS -->
-      <article class="featured-project">
-
-        <a
-          href="#myabroadmds"
-          class="featured-image featured-image-mam"
-          aria-label="View MyAbroadMDs project"
-        >
-          <img
-            src="images/Device - Macbook Pro.png"
-            alt="MyAbroadMDs website displayed on a MacBook Pro"
-            loading="lazy"
-          >
-        </a>
-
-        <div class="featured-project-details">
-          <div class="featured-project-meta">
-            <span class="featured-number">01</span>
-            <span class="featured-meta-divider"></span>
-            <span class="featured-project-name">
-              WEB DESIGN · DEVELOPMENT · DIGITAL MARKETING
-            </span>
-          </div>
-
-          <h3>MyAbroadMDs</h3>
-
-          <p class="featured-description">
-            Redesigning and developing a growing healthcare
-            website, from custom WordPress pages to ecommerce,
-            SEO, and responsive experiences.
-          </p>
-
-          <a href="#myabroadmds" class="featured-view-link">
-            View project <span aria-hidden="true">↗</span>
-          </a>
-        </div>
-
-      </article>
-
-      <!-- PROJECT 02: SIP SOBER -->
-      <article class="featured-project featured-project-reverse">
-
-        <a
-          href="#sip-sober"
-          class="featured-image featured-image-sip"
-          aria-label="View Sip Sober project"
-        >
-          <img
-            src="images/iPhone 15 Pro - Black Titanium Front-18.png"
-            alt="Sip Sober iOS app Discover screen"
-            loading="lazy"
-          >
-        </a>
-
-        <div class="featured-project-details">
-          <div class="featured-project-meta">
-            <span class="featured-number">02</span>
-            <span class="featured-meta-divider"></span>
-            <span class="featured-project-name">
-              PRODUCT DESIGN · UX · IOS DEVELOPMENT
-            </span>
-          </div>
-
-          <h3>Sip Sober</h3>
-
-          <p class="featured-description">
-            An independently designed and developed iOS app
-            helping people discover zero-proof drinks and
-            venues throughout New York City.
-          </p>
-
-          <a href="#sip-sober" class="featured-view-link">
-            View project <span aria-hidden="true">↗</span>
-          </a>
-        </div>
-
-      </article>
-
-    </div>
-  </div>
-</section>
-
-
-
-    <!-- =========================================================
-         MYABROADMDS
-    ========================================================== -->
-
-    <div id="myabroadmds">
-
-      <!-- =========================
-           MYABROADMDS INTRO
-      ========================== -->
-
-      <section class="project-intro mam-intro-section">
-        <div class="container">
-    
-          <p class="project-label">
-            MYABROADMDS
-          </p>
-    
-          <h2 class="project-title">
-            Designing a digital healthcare experience for travelers
-          </h2>
-    
-          <p class="project-copy">
-            At MyAbroadMDs, I manage the design, development, and ongoing
-            updates of the company's WordPress website. My work includes
-            building custom pages, improving the user experience, managing
-            ecommerce features, and working on SEO and digital marketing.
-            As the company has grown, I've continued redesigning and
-            expanding the website to support its evolving services.
-          </p>
-    
-        </div>
-      </section>
-    
-          
-    <!-- =========================
-         MYABROADMDS — CHAPTER 01
-    ========================== -->
-    
-    <section class="mam-chapter-one" aria-labelledby="mam-chapter-one-title">
+    <section class="hero" id="top">
       <div class="container">
-    
-        <div class="mam-chapter-heading">
-          <div class="mam-chapter-heading-copy">
-            <p class="mam-chapter-eyebrow">01 / THE EVOLUTION</p>
-    
-            <h2 id="mam-chapter-one-title">
-              A website that evolved with the business
-            </h2>
-    
-            <p>
-              As MyAbroadMDs introduced new services, I continued
-              redesigning the website to improve navigation,
-              establish a more consistent visual identity, and
-              make information easier to find.
-            </p>
-          </div>
-    
-          <span class="mam-chapter-watermark" aria-hidden="true">01</span>
+        <p class="eyebrow">Web design · Development · Digital marketing</p>
+        <h1>Olivia<br>Sandstedt<span class="accent">.</span></h1>
+        <div class="hero-bottom">
+          <p class="hero-copy">
+            I design and build websites and digital products, combining
+            creative thinking with technical development. My work spans
+            WordPress, SEO and digital marketing, and an iOS app I built
+            from scratch.
+          </p>
+          <a href="#work" class="btn btn-dark">View my work</a>
         </div>
-    
-        <!-- BEFORE -->
-    
-        <div class="mam-chapter-stage">
-          <div class="mam-chapter-stage-copy">
-            <p class="mam-chapter-stage-label">
-              <span class="mam-stage-line"></span>
-              BEFORE
-            </p>
-    
-            <h3>Where it started.</h3>
-    
-            <p>
-              The original website presented a lot of information
-              at once. Bold colors, crowded layouts, and inconsistent
-              styling made it difficult to establish a clear
-              hierarchy.
-            </p>
+      </div>
+    </section>
+
+
+    <div id="work">
+
+    <!-- =========================================================
+         PROJECT 01 — MYABROADMDS
+    ========================================================== -->
+    <section class="project" id="myabroadmds">
+      <div class="container">
+
+        <div class="project-head">
+          <div>
+            <p class="eyebrow">01 · Website redesign</p>
+            <h2>MyAbroadMDs</h2>
           </div>
-    
-          <figure class="mam-chapter-image">
-            <img
-              src="images/MyHomeOri.jpg"
-              alt="Original MyAbroadMDs homepage with royal blue background and dense navigation"
-              loading="lazy"
-            >
-            <figcaption>ORIGINAL WEBSITE</figcaption>
+          <p class="project-summary">
+            I manage the design, development and ongoing updates of this
+            healthcare company's WordPress site. As the business grew, I took
+            it from a dense template to custom, responsive pages, making
+            existing content easier to navigate instead of adding more.
+          </p>
+        </div>
+
+        <dl class="project-meta">
+          <div><dt>Role</dt><dd>Design, development &amp; marketing</dd></div>
+          <div><dt>Platform</dt><dd>WordPress + custom HTML/CSS</dd></div>
+          <div><dt>Focus</dt><dd>UX, ecommerce, SEO</dd></div>
+        </dl>
+
+        <!-- BEFORE / AFTER -->
+        <div class="compare">
+          <figure class="compare-item">
+            <div class="frame frame-web">
+              <img src="images/MyHomeOri.jpg" alt="Original MyAbroadMDs homepage with royal blue background and dense navigation" loading="lazy">
+            </div>
+            <figcaption><strong>Before</strong> Dense layout, weak hierarchy, unclear navigation</figcaption>
           </figure>
-        </div>
-    
-        <!-- THREE KEY PROBLEMS -->
-    
-        <div class="mam-chapter-findings">
-          <div class="mam-chapter-finding">
-            <span>01</span>
-            <h4>Visual hierarchy</h4>
-            <p>Too many elements competed for attention.</p>
-          </div>
-    
-          <div class="mam-chapter-finding">
-            <span>02</span>
-            <h4>Brand consistency</h4>
-            <p>Typography, imagery, and layouts lacked cohesion.</p>
-          </div>
-    
-          <div class="mam-chapter-finding">
-            <span>03</span>
-            <h4>Navigation</h4>
-            <p>Visitors needed clearer paths to key services.</p>
-          </div>
-        </div>
-    
-        
-        <!-- FIRST REDESIGN — COMPACT -->
-        
-        <div class="mam-chapter-first-redesign">
-        
-          <div class="mam-chapter-first-copy">
-        
-            <p class="mam-chapter-stage-label">
-              <span class="mam-stage-line"></span>
-              FIRST REDESIGN
-            </p>
-        
-            <h3>A first step toward consistency.</h3>
-        
-            <p>
-              I introduced a more consistent color palette, typography,
-              imagery, and navigation, creating a stronger foundation
-              for the website's next redesign.
-            </p>
-        
-          </div>
-        
-          <figure class="mam-chapter-first-image">
-            <img
-              src="images/MyHome2.jpg"
-              alt="First redesign of the MyAbroadMDs homepage"
-              loading="lazy"
-            >
-            <figcaption>FIRST REDESIGN</figcaption>
-          </figure>
-        
-        </div>
-        
-        </div>
-        </section>
-
-
-            <!-- =========================
-           SECTION 02 — PLANNING + USER JOURNEY
-      ========================== -->
-      
-      <section class="case-section mam-section mam-section-02 numbered-section" data-section="02">
-        <div class="container">
-      
-          <div class="section-header">
-            <p class="section-label">
-              02 / MYABROADMDS
-            </p>
-      
-            <h2 class="section-title">
-              Planning the redesign
-            </h2>
-      
-            <p class="section-copy">
-              After the first redesign, I planned the next phase of the
-              website around clearer navigation, stronger content
-              hierarchy, and the company's expanding services.
-            </p>
-          </div>
-      
-          <div class="planning-grid">
-          
-            <figure class="planning-item">
-              <figcaption>01 / HOMEPAGE STRUCTURE & NAVIGATION</figcaption>
-              <img
-                src="images/MyPlan1.jpg"
-                alt="Annotated homepage planning for MyAbroadMDs"
-                loading="lazy"
-              >
-            </figure>
-          
-            <figure class="planning-item">
-              <figcaption>02 / MEMBERSHIP PAGE PLANNING</figcaption>
-              <img
-                src="images/MyPlan2.jpg"
-                alt="Annotated membership page planning for MyAbroadMDs"
-                loading="lazy"
-              >
-            </figure>
-          
-          </div>
-
-          <!-- SUBSECTION — USER JOURNEY -->
-
-          <div class="mam-journey-sub">
-
-            <div class="mam-journey-sub-copy">
-              <p class="mam-chapter-stage-label">
-                <span class="mam-stage-line"></span>
-                BUILDING THE USER JOURNEY
-              </p>
-
-              <h3>Each iteration made it simpler.</h3>
-
-              <p>
-                As MyAbroadMDs expanded, I focused on how visitors moved
-                through the homepage. Each iteration helped me organize
-                growing content, introduce clearer paths to services,
-                and simplify the overall experience.
-              </p>
-            </div>
-      
-            <div class="journey-grid">
-            
-              <figure class="journey-item">
-                <figcaption class="journey-label">
-                  01 / EARLY ITERATION
-                </figcaption>
-                <div class="journey-image">
-                  <img
-                    src="images/MyBuild1.jpg"
-                    alt="Early MyAbroadMDs homepage design"
-                    loading="lazy"
-                  >
-                </div>
-              </figure>
-            
-              <figure class="journey-item">
-                <figcaption class="journey-label">
-                  02 / EXPANDING THE EXPERIENCE
-                </figcaption>
-                <div class="journey-image">
-                  <img
-                    src="images/MyBuild2.1.jpg"
-                    alt="Intermediate MyAbroadMDs homepage design"
-                    loading="lazy"
-                  >
-                </div>
-              </figure>
-            
-              <figure class="journey-item">
-                <figcaption class="journey-label">
-                  03 / REFINING THE JOURNEY
-                </figcaption>
-                <div class="journey-image">
-                  <img
-                    src="images/MyBuild3.1.jpg"
-                    alt="Later MyAbroadMDs homepage design"
-                    loading="lazy"
-                  >
-                </div>
-              </figure>
-            
-            </div>
-      
-            <div class="journey-takeaway">
-              <span class="journey-takeaway-label">
-                THE TAKEAWAY
-              </span>
-              <p>
-                The biggest shift was moving from adding more content
-                to making existing content easier to navigate.
-              </p>
-            </div>
-
-          </div>
-      
-        </div>
-      </section>
-
-      
-      
-      <!-- =========================
-           SECTION 04 — CUSTOM DEVELOPMENT
-      ========================== -->
-      
-      <section class="case-section mam-section mam-section-04 numbered-section" data-section="03">
-        <div class="container">
-      
-          <!-- CHAPTER INTRO -->
-      
-          <div class="section-header">
-            <p class="section-label">03 / MYABROADMDS</p>
-      
-            <h2 class="section-title">
-              Moving beyond the WordPress template
-            </h2>
-      
-            <p class="section-copy">
-              As the website evolved, I began building custom HTML
-              and CSS sections within WordPress. This gave me more
-              control over the design and helped create a consistent,
-              responsive experience across the site's growing services.
-            </p>
-          </div>
-      
-                    <!-- CUSTOM PAGES -->
-
-          <div class="mam-build-gallery">
-
-            <figure>
-              <figcaption class="mam-build-label">01 / HOMEPAGE</figcaption>
+          <figure class="compare-item">
+            <div class="frame frame-web frame-after">
               <img src="images/MWP1.jpg" alt="Custom-developed MyAbroadMDs homepage" loading="lazy">
-              <p>
-                Clearer content hierarchy, reusable design patterns,
-                and more intentional paths to the company's services.
-              </p>
-            </figure>
-
-            <figure>
-              <figcaption class="mam-build-label">02 / MEMBERSHIPS</figcaption>
-              <img src="images/MWP2.jpg" alt="Custom MyAbroadMDs memberships page" loading="lazy">
-            </figure>
-
-            <figure>
-              <figcaption class="mam-build-label">03 / ENTERPRISE SOLUTIONS</figcaption>
-              <img src="images/MWP3.jpg" alt="Custom MyAbroadMDs enterprise solutions page" loading="lazy">
-            </figure>
-
-          </div>
-      
-          <!-- RESPONSIVE DESIGN -->
-      
-          <div class="mam-build-responsive">
-      
-            <div class="mam-build-responsive-heading">
-              <p class="mam-build-label">RESPONSIVE DESIGN</p>
-      
-              <h3>Designed across devices.</h3>
-      
-              <p>
-                I adapted layouts for desktop, tablet, and mobile,
-                keeping content readable and navigation consistent.
-              </p>
             </div>
-      
-            <div class="mam-build-device-grid">
-      
-              <figure class="mam-build-device">
-                <figcaption>MOBILE</figcaption>
-                <img
-                  src="images/MyR1.jpg"
-                  alt="MyAbroadMDs mobile responsive design"
-                  loading="lazy"
-                >
-              </figure>
-      
-              <figure class="mam-build-device">
-                <figcaption>TABLET</figcaption>
-                <img
-                  src="images/MyR2.jpg"
-                  alt="MyAbroadMDs tablet responsive design"
-                  loading="lazy"
-                >
-              </figure>
-      
-            </div>
-      
-          </div>
-      
-          <!-- FINAL STATEMENT -->
-      
-          <div class="mam-build-conclusion">
-            <span>THE RESULT</span>
-      
-            <p>
-              A more flexible website that I can continue to
-              develop as the business grows.
-            </p>
-          </div>
-      
+            <figcaption><strong class="accent">After</strong> Custom homepage, consistent brand, clear paths to services</figcaption>
+          </figure>
         </div>
-      </section>
 
-    </div>
+        <!-- HIGHLIGHTS -->
+        <div class="highlights">
+          <article class="highlight">
+            <div class="frame frame-thumb">
+              <img src="images/MyPlan1.jpg" alt="Annotated homepage planning for MyAbroadMDs" loading="lazy">
+            </div>
+            <h3>Planned on paper first</h3>
+            <p>Annotated sketches mapped the homepage navigation and the membership page before building.</p>
+          </article>
+          <article class="highlight">
+            <div class="frame frame-thumb">
+              <img src="images/MyBuild3.1.jpg" alt="Later MyAbroadMDs homepage design" loading="lazy">
+            </div>
+            <h3>Simpler with every iteration</h3>
+            <p>Each homepage round organized growing content and gave visitors clearer paths to services.</p>
+          </article>
+          <article class="highlight">
+            <div class="frame frame-thumb">
+              <img src="images/MyR1.jpg" alt="MyAbroadMDs mobile responsive design" loading="lazy">
+            </div>
+            <h3>Custom and responsive</h3>
+            <p>HTML/CSS sections built inside WordPress that work across desktop, tablet and mobile.</p>
+          </article>
+        </div>
+
+        <!-- FULL PROCESS (EXPANDABLE) -->
+        <details class="process">
+          <summary>See the full process</summary>
+
+          <div class="process-step">
+            <h4><span>01</span> The first redesign</h4>
+            <p>A consistent color palette, typography, imagery and navigation created a foundation for what came next.</p>
+            <div class="gallery gallery-2">
+              <figure><div class="frame frame-web"><img src="images/MyHomeOri.jpg" alt="Original MyAbroadMDs homepage" loading="lazy"></div><figcaption>Original</figcaption></figure>
+              <figure><div class="frame frame-web"><img src="images/MyHome2.jpg" alt="First redesign of the MyAbroadMDs homepage" loading="lazy"></div><figcaption>First redesign</figcaption></figure>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <h4><span>02</span> Planning the structure</h4>
+            <p>I planned the next phase around clearer navigation, stronger content hierarchy and the company's expanding services.</p>
+            <div class="gallery gallery-2">
+              <figure><div class="frame frame-plan"><img src="images/MyPlan1.jpg" alt="Annotated homepage planning for MyAbroadMDs" loading="lazy"></div><figcaption>Homepage structure &amp; navigation</figcaption></figure>
+              <figure><div class="frame frame-plan"><img src="images/MyPlan2.jpg" alt="Annotated membership page planning for MyAbroadMDs" loading="lazy"></div><figcaption>Membership page</figcaption></figure>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <h4><span>03</span> Simplifying the user journey</h4>
+            <p>The biggest shift was moving from adding more content to making existing content easier to navigate.</p>
+            <div class="gallery gallery-3">
+              <figure><div class="frame frame-web"><img src="images/MyBuild1.jpg" alt="Early MyAbroadMDs homepage design" loading="lazy"></div><figcaption>Early iteration</figcaption></figure>
+              <figure><div class="frame frame-web"><img src="images/MyBuild2.1.jpg" alt="Intermediate MyAbroadMDs homepage design" loading="lazy"></div><figcaption>Expanding the experience</figcaption></figure>
+              <figure><div class="frame frame-web"><img src="images/MyBuild3.1.jpg" alt="Later MyAbroadMDs homepage design" loading="lazy"></div><figcaption>Refining the journey</figcaption></figure>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <h4><span>04</span> Going beyond the template</h4>
+            <p>Custom HTML and CSS sections gave me more control over the design and kept the experience consistent across new services.</p>
+            <div class="gallery gallery-3">
+              <figure><div class="frame frame-web"><img src="images/MWP1.jpg" alt="Custom-developed MyAbroadMDs homepage" loading="lazy"></div><figcaption>Homepage</figcaption></figure>
+              <figure><div class="frame frame-web"><img src="images/MWP2.jpg" alt="Custom MyAbroadMDs memberships page" loading="lazy"></div><figcaption>Memberships</figcaption></figure>
+              <figure><div class="frame frame-web"><img src="images/MWP3.jpg" alt="Custom MyAbroadMDs enterprise solutions page" loading="lazy"></div><figcaption>Enterprise solutions</figcaption></figure>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <h4><span>05</span> Designed across devices</h4>
+            <p>Layouts adapted for tablet and mobile, keeping content readable and navigation consistent.</p>
+            <div class="gallery gallery-2">
+              <figure><div class="frame frame-device"><img src="images/MyR1.jpg" alt="MyAbroadMDs mobile responsive design" loading="lazy"></div><figcaption>Mobile</figcaption></figure>
+              <figure><div class="frame frame-device"><img src="images/MyR2.jpg" alt="MyAbroadMDs tablet responsive design" loading="lazy"></div><figcaption>Tablet</figcaption></figure>
+            </div>
+          </div>
+        </details>
+
+        <p class="result"><span>The result</span> A more flexible website I can keep developing as the business grows.</p>
+
+      </div>
+    </section>
 
 
     <!-- =========================================================
-     SIP SOBER
-========================================================== -->
+         PROJECT 02 — SIP SOBER
+    ========================================================== -->
+    <section class="project project-alt" id="sip-sober">
+      <div class="container">
 
-    <div id="sip-sober">
-    
-    
-      <!-- =========================
-           SIP SOBER INTRO
-      ========================== -->
-    
-      <section class="project-intro sip-intro-section">
-        <div class="container">
-    
-          <p class="project-label">
-            SIP SOBER
+        <div class="project-head">
+          <div>
+            <p class="eyebrow">02 · iOS app · Founder</p>
+            <h2>Sip Sober</h2>
+          </div>
+          <p class="project-summary">
+            A consumer iOS app for discovering zero-proof drinks and venues in
+            New York City. I led it from concept through design and development,
+            building it in SwiftUI and Firebase, from a browser map prototype
+            to a native app.
           </p>
-    
-          <h2 class="project-title">
-            Zero-proof discovery, built from the ground up
-          </h2>
-    
-          <p class="project-copy">
-            I created Sip Sober, a consumer iOS app for discovering zero-proof
-            drinks and venues in New York City. I led the product from concept
-            through design and development, building the experience in SwiftUI
-            and Firebase while continually refining its structure, features,
-            and visual system.
-          </p>
-    
         </div>
-      </section>
-    
-    
-    
-            <!-- =========================
-           SECTION 01 — PROTOTYPE + FIRST APP
-      ========================== -->
-    
-      <section class="case-section sip-section sip-section-01 numbered-section" data-section="01">
-        <div class="container">
-    
-          <div class="section-header">
-    
-            <p class="section-label">
-              01 / SIP SOBER
-            </p>
-    
-            <h2 class="section-title">
-              From prototype to iOS app
-            </h2>
-    
-            <p class="section-copy">
-              Sip Sober began as a simple web-based map. Building the first
-              version helped me validate the core discovery experience, but it
-              also revealed an opportunity to create something more useful:
-              a native app where users could explore venues, filter results,
-              save places, and discover zero-proof options beyond the map itself.
-            </p>
-    
-          </div>
-    
-          <div class="sip-prototype-block">
-    
-            <div class="image-label">
-              EARLY WEB PROTOTYPE
+
+        <dl class="project-meta">
+          <div><dt>Role</dt><dd>Product, UX &amp; iOS development</dd></div>
+          <div><dt>Built with</dt><dd>SwiftUI, Firebase</dd></div>
+          <div><dt>Focus</dt><dd>Discovery, navigation, visual identity</dd></div>
+        </dl>
+
+        <!-- BEFORE / AFTER -->
+        <div class="compare">
+          <figure class="compare-item">
+            <div class="phones">
+              <img src="images/SSB1.jpg" alt="Early Sip Sober Home screen" loading="lazy">
+              <img src="images/SSB2.jpg" alt="Early Sip Sober Map screen" loading="lazy">
+              <img src="images/SSB3.jpg" alt="Early Sip Sober Favorites screen" loading="lazy">
             </div>
-    
-            <div class="sip-prototype-image">
-              <img
-                src="images/SSProto.jpg"
-                alt="Early Sip Sober browser-based map prototype">
+            <figcaption><strong>Before</strong> First native version: Home, Map, Favorites</figcaption>
+          </figure>
+          <figure class="compare-item">
+            <div class="phones phones-after">
+              <img src="images/SSFinal1.jpg" alt="Current Sip Sober Discover screen" loading="lazy">
+              <img src="images/SSFinal2.jpg" alt="Current Sip Sober Map screen" loading="lazy">
+              <img src="images/SSFinal3.jpg" alt="Current Sip Sober Profile and saved places screen" loading="lazy">
             </div>
-    
-            <p class="sip-image-caption">
-              The first version used a browser-based map to test the core idea
-              of helping users find venues serving zero-proof drinks.
-            </p>
-    
-          </div>
-
-          <!-- SUBSECTION — FIRST NATIVE APP -->
-
-          <div class="sip-sub">
-
-            <div class="sip-sub-copy">
-              <p class="mam-chapter-stage-label">
-                <span class="mam-stage-line"></span>
-                BUILDING THE APP EXPERIENCE
-              </p>
-
-              <h3>The first native version.</h3>
-
-              <p>
-                The first native version established the core structure of the
-                app around three areas: Home, Map, and Favorites. This gave me
-                a foundation for testing how users could move between account
-                content, venue discovery, and saved places before expanding the
-                experience further.
-              </p>
-            </div>
-    
-            <div class="sip-build-grid">
-    
-              <div class="sip-build-item">
-                <div class="image-label">HOME</div>
-                <img src="images/SSB1.jpg" alt="Early Sip Sober Home screen">
-              </div>
-    
-              <div class="sip-build-item">
-                <div class="image-label">MAP</div>
-                <img src="images/SSB2.jpg" alt="Early Sip Sober Map screen">
-              </div>
-    
-              <div class="sip-build-item">
-                <div class="image-label">FAVORITES</div>
-                <img src="images/SSB3.jpg" alt="Early Sip Sober Favorites screen">
-              </div>
-    
-            </div>
-
-          </div>
-    
+            <figcaption><strong class="accent">After</strong> Current app: Discover, Map, Profile</figcaption>
+          </figure>
         </div>
-      </section>
-    
-    
-      <!-- =========================
-           SECTION 03
-      ========================== -->
-    
-      <section class="case-section sip-section sip-section-03 numbered-section" data-section="02">
-        <div class="container">
-    
-          <div class="section-header">
-    
-            <p class="section-label">
-              02 / SIP SOBER
-            </p>
-    
-            <h2 class="section-title">
-              Rethinking the app structure
-            </h2>
-    
-            <p class="section-copy">
-              As Sip Sober grew, I reconsidered how the three main areas of
-              the app should work together. Home evolved into Discover,
-              creating a dedicated space for exploring venues and curated
-              content. Favorites expanded into a broader Profile experience
-              that also included saved places, while the Map remained central
-              to venue discovery.
-            </p>
-    
-          </div>
-    
-    
-                    <div class="sip-evolution-grid">
 
-            <div class="sip-evolution-item">
-              <h3 class="sip-evolution-title">From home to discovery</h3>
-              <img src="images/SSAfter1.jpg" alt="Updated Sip Sober Discover screen">
-              <p class="sip-evolution-copy">
-                Replaced the original account-focused Home screen with a
-                dedicated space for exploring venues and curated guides.
-              </p>
-            </div>
-
-            <div class="sip-evolution-item">
-              <h3 class="sip-evolution-title">Expanding the core experience</h3>
-              <img src="images/SSAfter2.jpg" alt="Updated Sip Sober Map screen">
-              <p class="sip-evolution-copy">
-                The Map remained central while filtering and venue
-                interactions became more developed.
-              </p>
-            </div>
-
-            <div class="sip-evolution-item">
-              <h3 class="sip-evolution-title">Consolidating personal features</h3>
-              <img src="images/SSAfter3.jpg" alt="Updated Sip Sober Profile and saved places screen">
-              <p class="sip-evolution-copy">
-                Saved places and account features were brought together
-                within a broader Profile experience.
-              </p>
-            </div>
-
-          </div>
-
+        <!-- HIGHLIGHTS -->
+        <div class="highlights">
+          <article class="highlight highlight-text">
+            <span class="highlight-tag">Discover</span>
+            <h3>More ways to find drinks</h3>
+            <p>Home became Discover, with drink categories and curated guides beyond the map.</p>
+          </article>
+          <article class="highlight highlight-text">
+            <span class="highlight-tag">Map</span>
+            <h3>Easier exploring</h3>
+            <p>Filters, venue details and map interactions make it easier to narrow down where to go.</p>
+          </article>
+          <article class="highlight highlight-text">
+            <span class="highlight-tag">Profile</span>
+            <h3>Saved in one place</h3>
+            <p>Favorites grew into Profile, bringing saved venues and account features together.</p>
+          </article>
         </div>
-      </section>
-    
-    
-    
-      <!-- =========================
-           SECTION 04
-      ========================== -->
-    
-      <section class="case-section sip-section sip-section-04 numbered-section" data-section="03">
-        <div class="container">
-    
-          <div class="section-header">
-    
-            <p class="section-label">
-              03 / SIP SOBER
-            </p>
-    
-            <h2 class="section-title">
-              Establishing a stronger visual identity
-            </h2>
-    
-            <p class="section-copy">
-              As the app became more developed, I revisited the visual design
-              and introduced the dark navy interface. I also updated the cards,
-              navigation, typography, and selected states so Discover, Map,
-              and Profile felt like parts of the same app.
-            </p>
-    
+
+        <!-- FULL PROCESS (EXPANDABLE) -->
+        <details class="process">
+          <summary>See the full process</summary>
+
+          <div class="process-step">
+            <h4><span>01</span> From prototype to iOS app</h4>
+            <p>Sip Sober began as a browser-based map. It validated the core idea and showed the need for a native app with filters, saved places and discovery beyond the map.</p>
+            <div class="phones phones-single">
+              <img src="images/SSProto.jpg" alt="Early Sip Sober browser-based map prototype" loading="lazy">
+            </div>
           </div>
-    
-    
-          <div class="sip-visual-grid">
-    
-            <div class="sip-visual-item">
-    
-              <div class="image-label">
-                DISCOVER
-              </div>
-    
-              <img
-                src="images/SSVis1.jpg"
-                alt="Early navy Sip Sober Discover design">
-    
+
+          <div class="process-step">
+            <h4><span>02</span> Rethinking the app structure</h4>
+            <p>Home evolved into Discover, Favorites expanded into Profile with saved places, and the Map stayed central.</p>
+            <div class="phones">
+              <img src="images/SSAfter1.jpg" alt="Updated Sip Sober Discover screen" loading="lazy">
+              <img src="images/SSAfter2.jpg" alt="Updated Sip Sober Map screen" loading="lazy">
+              <img src="images/SSAfter3.jpg" alt="Updated Sip Sober Profile and saved places screen" loading="lazy">
             </div>
-    
-    
-            <div class="sip-visual-item">
-    
-              <div class="image-label">
-                MAP
-              </div>
-    
-              <img
-                src="images/SSVis2.jpg"
-                alt="Early navy Sip Sober Map design">
-    
-            </div>
-    
-    
-            <div class="sip-visual-item">
-    
-              <div class="image-label">
-                PROFILE + SAVED
-              </div>
-    
-              <img
-                src="images/SSVis3.jpg"
-                alt="Early navy Sip Sober Profile and saved design">
-    
-            </div>
-    
           </div>
-    
-        </div>
-      </section>
-    
-    
-    
-      <!-- =========================
-           SECTION 05 — CURRENT
-      ========================== -->
-    
-      <section class="case-section sip-section sip-section-05 numbered-section" data-section="04">
-        <div class="container">
-    
-          <div class="section-header">
-    
-            <p class="section-label">
-              04 / SIP SOBER
-            </p>
-    
-            <h2 class="section-title">
-              The current experience
-            </h2>
-    
-            <p class="section-copy">
-              I continued refining the app as I built out its features.
-              Discover now puts more emphasis on drink categories and guides,
-              the Map makes it easier to browse and filter venues, and Profile
-              brings saved places and account features together in one place.
-            </p>
-    
+
+          <div class="process-step">
+            <h4><span>03</span> A stronger visual identity</h4>
+            <p>A dark navy interface with updated cards, navigation, typography and selected states made Discover, Map and Profile feel like one app.</p>
+            <div class="phones">
+              <img src="images/SSVis1.jpg" alt="Early navy Sip Sober Discover design" loading="lazy">
+              <img src="images/SSVis2.jpg" alt="Early navy Sip Sober Map design" loading="lazy">
+              <img src="images/SSVis3.jpg" alt="Early navy Sip Sober Profile and saved design" loading="lazy">
+            </div>
           </div>
-    
-    
-          <div class="sip-final-grid">
-    
-            <div class="sip-final-item">
-    
-              <div class="image-label">
-                DISCOVER
-              </div>
-    
-              <img
-                src="images/SSFinal1.jpg"
-                alt="Current Sip Sober Discover screen">
-    
-            </div>
-    
-    
-            <div class="sip-final-item">
-    
-              <div class="image-label">
-                MAP
-              </div>
-    
-              <img
-                src="images/SSFinal2.jpg"
-                alt="Current Sip Sober Map screen">
-    
-            </div>
-    
-    
-            <div class="sip-final-item">
-    
-              <div class="image-label">
-                PROFILE + SAVED
-              </div>
-    
-              <img
-                src="images/SSFinal3.jpg"
-                alt="Current Sip Sober Profile and saved places screen">
-    
-            </div>
-    
-          </div>
-    
-    
-          <!-- FINAL TAKEAWAYS -->
-    
-          <div class="insight-grid sip-final-insights">
-    
-            <div class="insight-card">
-    
-              <h3>More ways to discover</h3>
-    
-              <p>
-                Drink categories and curated guides give users more ways to
-                find places beyond the map.
-              </p>
-    
-            </div>
-    
-    
-            <div class="insight-card">
-    
-              <h3>Easier map exploration</h3>
-    
-              <p>
-                Filters, venue details, and map interactions make it easier
-                to narrow down where to go.
-              </p>
-    
-            </div>
-    
-    
-            <div class="insight-card">
-    
-              <h3>Saved in one place</h3>
-    
-              <p>
-                Saved venues and account features are now organized together
-                within Profile.
-              </p>
-    
-            </div>
-    
-          </div>
-    
-        </div>
-      </section>
+        </details>
+
+      </div>
+    </section>
 
     </div>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div>
+          <h2>About</h2>
+          <p>
+            I'm the Digital Marketing &amp; Web Specialist at MyAbroadMDs, a
+            health-tech startup in NYC, where I run the website end to end:
+            design, development, SEO and marketing.
+          </p>
+          <p>
+            Outside of work I build my own products. Sip Sober, my iOS app for
+            finding zero-proof drinks in New York, is the biggest so far.
+          </p>
+          <p class="muted">Indiana University Bloomington</p>
+        </div>
+        <div class="skills">
+          <div>
+            <h3>Design</h3>
+            <ul><li>UX &amp; user journeys</li><li>Responsive web design</li><li>Visual identity</li><li>Prototyping</li></ul>
+          </div>
+          <div>
+            <h3>Build</h3>
+            <ul><li>WordPress</li><li>HTML &amp; CSS</li><li>SwiftUI</li><li>Firebase</li></ul>
+          </div>
+          <div>
+            <h3>Grow</h3>
+            <ul><li>SEO</li><li>Digital marketing</li><li>Ecommerce</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Let's work together.</h2>
+        <p class="contact-copy">Open to digital marketing and web roles in New York.</p>
+        <div class="contact-links">
+          <!-- REPLACE: your email address (both places) -->
+          <a href="mailto:you@example.com" class="btn btn-accent">you@example.com</a>
+          <!-- REPLACE: your LinkedIn URL -->
+          <a href="https://www.linkedin.com/" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/osandss" class="btn btn-outline" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
 
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© 2026 Olivia Sandstedt</span>
+      <span>New York, NY</span>
+    </div>
+  </footer>
 
 
   <!-- =========================
        SCROLL REVEAL
   ========================== -->
-
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-
-      const revealElements = document.querySelectorAll(
-        `
-        .section-header,
-        .mam-original-feature,
-        .mam-subsection,
-        .planning-item,
-        .journey-item,
-        .insight-card,
-        .build-column,
-        .responsive-item,
-        .project-label,
-        .project-title,
-        .project-copy,
-        .sip-prototype-block,
-        .sip-build-item,
-        .sip-evolution-item,
-        .sip-visual-item,
-        .sip-final-item
-        `
+      const items = document.querySelectorAll(
+        ".project-head, .project-meta, .compare-item, .highlight, .process, .result, .about-grid > *, .contact .container"
       );
+      items.forEach((el) => el.classList.add("reveal"));
 
-      revealElements.forEach((element) => {
-        element.classList.add("reveal");
-      });
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
 
-
-      const staggerGroups = document.querySelectorAll(
-        `
-        .insight-grid,
-        .planning-grid,
-        .journey-grid,
-        .build-grid,
-        .responsive-grid,
-        .sip-build-grid,
-        .sip-evolution-grid,
-        .sip-visual-grid,
-        .sip-final-grid
-        `
-      );
-
-      staggerGroups.forEach((group) => {
-        const children = group.children;
-
-        if (children[1]) {
-          children[1].classList.add("reveal-delay-1");
-        }
-
-        if (children[2]) {
-          children[2].classList.add("reveal-delay-2");
-        }
-      });
-
-
-      const observer = new IntersectionObserver(
-        (entries, observer) => {
-
-          entries.forEach((entry) => {
-
-            if (entry.isIntersecting) {
-              entry.target.classList.add("is-visible");
-              observer.unobserve(entry.target);
-            }
-
-          });
-
-        },
-        {
-          threshold: 0.12,
-          rootMargin: "0px 0px -40px 0px"
-        }
-      );
-
-
-      revealElements.forEach((element) => {
-        observer.observe(element);
-      });
-
+      items.forEach((el) => observer.observe(el));
     });
   </script>
 
 </body>
-
 </html>
