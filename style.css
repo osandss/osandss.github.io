@@ -220,9 +220,9 @@ section[id], div[id] { scroll-margin-top: 80px; }
 /* MyAbroadMDs before/after: same window size so the pair matches,
    showing the top of each page */
 .compare-web { max-width: none; }
-.compare-web .frame-web { aspect-ratio: 16 / 11; width: 85%; margin: 0 auto; }
+.compare-web .frame-web { aspect-ratio: 16 / 11; width: 70%; margin: 0 auto; }
 .compare-web .frame-web img { height: 100%; object-fit: cover; object-position: top center; }
-.compare-web figcaption { width: 85%; margin-left: auto; margin-right: auto; }
+.compare-web figcaption { width: 70%; margin-left: auto; margin-right: auto; }
 
 /* Highlight thumbnails: shared height, images keep their shape
    and sit on a common bottom line */
@@ -491,6 +491,7 @@ section[id], div[id] { scroll-margin-top: 80px; }
   .project-meta { grid-template-columns: 1fr; gap: 14px; margin: 28px 0 32px; }
 
   .compare { grid-template-columns: 1fr; gap: 32px; }
+  .compare-web .frame-web, .compare-web figcaption { width: 100%; }
 
   .compare-item figcaption { flex-direction: column; gap: 2px; }
 
